@@ -3,355 +3,368 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Seed Assets</title>
-  <meta name="description" content="Studio-quality game templates, environments, VFX and art assets. Trusted by 10,000+ developers worldwide.">
+  <title>Game Seed Assets — Unity game templates, environments &amp; VFX</title>
+  <meta name="description" content="Plant the right assets. Build better games. Unity game templates, 2D environments and VFX from Game Seed Assets — plus custom work and 3 hours of free support with every asset.">
+  <meta name="theme-color" content="#070b08">
+  <script>document.documentElement.classList.add('js')</script>
 
-  <!-- Google Fonts -->
+  <meta property="og:title" content="Game Seed Assets">
+  <meta property="og:description" content="Plant the right assets. Build better games.">
+  <meta property="og:image" content="https://gameseedassets.store/assets/img/products/dark-key-1400.webp">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/img/logo-180.png">
+
+  <link rel="preload" href="assets/fonts/IntegralCF-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <!-- Ambient background canvas -->
-  <canvas id="bg-canvas"></canvas>
-  <div class="cursor-dot" aria-hidden="true"></div>
+<a class="skip" href="#assets">Skip to assets</a>
 
-  <!-- Organic SVG ambient blobs -->
-  <div id="organic-layer"></div>
+<!-- atmosphere: seeds, leaves and pollen drifting up (canvas, paused off-screen) -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-  <!-- ═══════════════════════════════════════════
-       NAVBAR
-  ═══════════════════════════════════════════ -->
-  <nav>
-    <a href="#" class="nav-brand">
-      <img src="assets/images/logo.png" alt="Game Seed Assets Logo">
-      <span>GAME SEED<br>ASSETS</span>
-    </a>
-    <div class="nav-links">
-      <a href="#assets">Assets</a>
-      <a href="#hire">Hire Us</a>
-      <a href="https://www.youtube.com/@GameSeedAssets" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://discord.com/invite/sbjZXg2YJ9" target="_blank" rel="noopener">Discord</a>
-    </div>
-    <div class="nav-badges">
-      <a href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener" title="Unity Asset Store">
-        <img src="assets/images/icons/Unity.png" alt="Unity Asset Store">
-      </a>
-      <a href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener" title="Fab Marketplace">
-        <img src="assets/images/icons/Fab.png" alt="Fab Marketplace">
-      </a>
-      <a href="https://gameseedassets.itch.io/" target="_blank" rel="noopener" title="Itch.io">
-        <img src="assets/images/icons/Itch.io.png" alt="Itch.io">
-      </a>
-    </div>
+<!-- ════════ NAV ════════ -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Game Seed Assets home">
+    <img src="assets/img/logo-256.webp" alt="" width="32" height="32">
+    <span>Game Seed<br>Assets</span>
+  </a>
+
+  <nav class="nav-links" id="nav-links" aria-label="Main">
+    <a href="#assets">Assets</a>
+    <a href="#collection">Collection</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#hire">Hire Us</a>
   </nav>
 
-  <!-- ═══════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════ -->
-  <section id="hero">
-    <img class="hero-leaf" src="assets/images/leaf.png" alt="Pixel Leaf">
-
-    <p class="hero-eyebrow">Game Asset Publisher</p>
-
-    <h1 class="hero-h1">
-      <span class="l1">GAME</span>
-      <span class="l2">SEED</span>
-      <span class="l3">ASSETS</span>
-    </h1>
-
-    <p class="hero-sub">
-      Plant the right assets. Build better games.
-    </p>
-
-    <div class="hero-ctas">
-      <a href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener" class="btn-grad">
-        Browse All Assets &rarr;
-      </a>
-      <a href="#hire" class="btn-ghost">Need Custom Assets &amp; Games?</a>
+  <div class="nav-right">
+    <div class="stores" aria-label="Where to buy">
+      <a href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener" title="Unity Asset Store"><img src="assets/img/icons/unity.png" alt="Unity Asset Store" width="20" height="20"></a>
+      <a href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener" title="Fab"><img src="assets/img/icons/fab.png" alt="Fab" width="20" height="20"></a>
+      <a href="https://gameseedassets.itch.io/" target="_blank" rel="noopener" title="itch.io"><img src="assets/img/icons/itch.png" alt="itch.io" width="20" height="20"></a>
     </div>
+    <a class="btn btn-green btn-sm nav-cta" href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener">Explore Assets</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+  </div>
+</header>
 
-    <div class="hero-store-row">
-      <a href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener">
-        <img src="assets/images/icons/Unity.png" alt="Unity Asset Store">
-      </a>
-      <div class="store-sep"></div>
-      <a href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener">
-        <img src="assets/images/icons/Fab.png" alt="Fab Marketplace">
-      </a>
-      <div class="store-sep"></div>
-      <a href="https://gameseedassets.itch.io/" target="_blank" rel="noopener">
-        <img src="assets/images/icons/Itch.io.png" alt="Itch.io">
-      </a>
-    </div>
+<main id="top">
 
-    <div class="scroll-pip">
-      <div class="scroll-line"></div>
-      <span>SCROLL</span>
+  <!-- ════════ HERO ════════ -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="hero-center">
+      <img class="hero-mark intro" style="--d:0" src="assets/img/logo-256.webp" alt="" width="72" height="72" fetchpriority="high">
+      <h1 class="hero-title">
+        <span class="l1 intro" style="--d:2">Game</span>
+        <span class="l2 grad intro" style="--d:3">Seed</span>
+        <span class="l3 intro" style="--d:4">Assets</span>
+      </h1>
+
+      <p class="hero-tag intro" style="--d:5">Plant the right assets. Build better games.</p>
+
+      <div class="hero-ctas intro" style="--d:6">
+        <a href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener" class="btn btn-green btn-lg">Browse All Assets →</a>
+        <a href="#hire" class="btn btn-ghost btn-lg">Need Custom Assets &amp; Games?</a>
+      </div>
+
+      <nav class="market-row intro" style="--d:7" aria-label="Marketplaces">
+        <a href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener"><img src="assets/img/icons/unity.png" alt="" width="22" height="22">Unity Asset Store</a>
+        <a href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener"><img src="assets/img/icons/fab.png" alt="" width="22" height="22">Fab Marketplace</a>
+        <a href="https://gameseedassets.itch.io/" target="_blank" rel="noopener"><img src="assets/img/icons/itch.png" alt="" width="22" height="22">itch.io</a>
+      </nav>
+
+      <a href="#assets" class="scroll-cue intro" style="--d:8" aria-label="Scroll to assets"><span class="scroll-line"></span>Scroll</a>
     </div>
   </section>
 
-  <div class="divider"></div>
+  <!-- ════════ FEATURED ASSETS ════════ -->
+  <section class="section" id="assets">
+    <div class="container sec-head sec-head-solo">
+      <h2>Featured <span class="grad">assets</span></h2>
+    </div>
 
-  <!-- ═══════════════════════════════════════════
-       ASSETS / PRODUCTS
-  ═══════════════════════════════════════════ -->
-  <section id="assets" class="section">
+    <div class="carousel" id="carousel" data-anim-zone>
+      <div class="ctrack" id="ctrack" role="group" aria-roledescription="carousel" aria-label="Featured assets">
+
+        <article class="slide">
+          <div class="slide-media" data-loop="assets/video/archer-loop.mp4" data-video="assets/video/archer.mp4">
+            <img src="assets/img/products/archer-key-1400.webp" srcset="assets/img/products/archer-key-700.webp 700w, assets/img/products/archer-key-1400.webp 1400w" sizes="(max-width: 900px) 92vw, 620px" alt="Archer Kit — full game" width="1400" height="933" loading="lazy" decoding="async">
+            <button class="demo-btn" type="button">▶ Gameplay</button>
+          </div>
+          <div class="slide-body">
+            <div class="slide-tags"><span class="tag">Game template</span><span class="tag tag-price">$25</span></div>
+            <h3>Archer Kit — Archery System</h3>
+            <p>Aiming, draw physics, enemies and progression — a full archery game you can reskin.</p>
+            <div class="slide-btns">
+              <a class="btn btn-green btn-sm" href="https://assetstore.unity.com/packages/templates/packs/archer-kit-game-template-archery-system-378546" target="_blank" rel="noopener">Unity Asset Store</a>
+              <!-- FAB: replace with this asset's Fab product URL -->
+              <a class="btn btn-ghost btn-sm" href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener">Fab Marketplace</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="slide-media" data-loop="assets/video/dark-loop.mp4" data-video="assets/video/dark.mp4">
+            <img src="assets/img/products/dark-key-1400.webp" srcset="assets/img/products/dark-key-700.webp 700w, assets/img/products/dark-key-1400.webp 1400w" sizes="(max-width: 900px) 92vw, 620px" alt="Dark Environment Pack" width="1400" height="933" loading="lazy" decoding="async">
+            <button class="demo-btn" type="button">▶ Demo</button>
+          </div>
+          <div class="slide-body">
+            <div class="slide-tags"><span class="tag">2D environment</span><span class="tag tag-free">Free</span></div>
+            <h3>Dark 2D World — Environment Pack</h3>
+            <p>Atmospheric silhouette art: trees, terrain, props and parallax layers for 2D platformers.</p>
+            <div class="slide-btns">
+              <a class="btn btn-green btn-sm" href="https://assetstore.unity.com/packages/2d/environments/dark-2d-world-environment-pack-366952" target="_blank" rel="noopener">Unity Asset Store</a>
+              <!-- FAB: replace with this asset's Fab product URL -->
+              <a class="btn btn-ghost btn-sm" href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener">Fab Marketplace</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="slide-media" data-loop="assets/video/sling-loop.mp4">
+            <img src="assets/img/products/sling-key-1400.webp" srcset="assets/img/products/sling-key-700.webp 700w, assets/img/products/sling-key-1400.webp 1400w" sizes="(max-width: 900px) 92vw, 620px" alt="Sling Shooter — complete game" width="1400" height="933" loading="lazy" decoding="async">
+          </div>
+          <div class="slide-body">
+            <div class="slide-tags"><span class="tag">Complete game</span><span class="tag tag-price">$50</span></div>
+            <h3>Sling Shooter — Complete Game</h3>
+            <p>Physics slingshot gameplay, level progression and hypercasual UI, ready to rebrand.</p>
+            <div class="slide-btns">
+              <a class="btn btn-green btn-sm" href="https://assetstore.unity.com/packages/templates/packs/stickman-shooter-game-template-379820" target="_blank" rel="noopener">Unity Asset Store</a>
+              <!-- FAB: replace with this asset's Fab product URL -->
+              <a class="btn btn-ghost btn-sm" href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener">Fab Marketplace</a>
+              <a class="btn btn-ghost btn-sm" href="https://gameseedassets.itch.io/sling-shooter" target="_blank" rel="noopener">itch.io</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="slide-media" data-loop="assets/video/rope-loop.mp4">
+            <img src="assets/img/products/rope-key-1400.webp" srcset="assets/img/products/rope-key-700.webp 700w, assets/img/products/rope-key-1400.webp 1400w" sizes="(max-width: 900px) 92vw, 620px" alt="Twisted Ropes — rope puzzle template" width="1400" height="933" loading="lazy" decoding="async">
+          </div>
+          <div class="slide-body">
+            <div class="slide-tags"><span class="tag">Game template</span><span class="tag tag-price">$65</span></div>
+            <h3>Rope Puzzle — Game Template</h3>
+            <p>Untangle-the-rope mechanics with 25 new levels in v2.0, toon art and a playable demo.</p>
+            <div class="slide-btns">
+              <a class="btn btn-green btn-sm" href="https://assetstore.unity.com/packages/templates/packs/rope-puzzle-game-template-351506" target="_blank" rel="noopener">Unity Asset Store</a>
+              <!-- FAB: replace with this asset's Fab product URL -->
+              <a class="btn btn-ghost btn-sm" href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener">Fab Marketplace</a>
+              <a class="btn btn-ghost btn-sm" href="https://gameseedassets.itch.io/twisted-rope" target="_blank" rel="noopener">itch.io</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="slide">
+          <div class="slide-media" data-loop="assets/video/fire-loop.mp4">
+            <img src="assets/img/posters/fire-1280.webp" alt="Low Poly Fire Particles" width="1280" height="686" loading="lazy" decoding="async">
+          </div>
+          <div class="slide-body">
+            <div class="slide-tags"><span class="tag">VFX · particles</span><span class="tag tag-free">Free</span></div>
+            <h3>Low Poly Fire Particles</h3>
+            <p>Stylised campfire and bonfire VFX in five colour variants. Built-in + URP, Unity 6 ready.</p>
+            <div class="slide-btns">
+              <a class="btn btn-light btn-sm" href="https://assetstore.unity.com/packages/vfx/particles/fire-explosions/vfx-low-poly-fire-particles-372598" target="_blank" rel="noopener">Unity Asset Store</a>
+              <!-- FAB: replace with this asset's Fab product URL -->
+              <a class="btn btn-ghost btn-sm" href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener">Fab Marketplace</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <button class="cnav prev" id="cprev" aria-label="Previous asset"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="cnav next" id="cnext" aria-label="Next asset"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      <div class="cdots" id="cdots" role="tablist" aria-label="Choose asset"></div>
+    </div>
+  </section>
+
+  <!-- ════════ ASSET COLLECTION ════════ -->
+  <section class="section collection" id="collection">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="kicker">The collection</p>
+          <h2>Engines, art packs<br>and <span class="grad">free VFX</span>.</h2>
+        </div>
+        <a href="https://gameseedassets.itch.io/" target="_blank" rel="noopener" class="link-arrow">Browse on itch.io <span>↗</span></a>
+      </div>
+
+      <!-- add a card: copy one <a class="cap"> block, drop the capsule in assets/img/products/ -->
+      <div class="caps">
+
+        <a class="cap" href="https://gameseedassets.itch.io/25d-game-template" target="_blank" rel="noopener" data-reveal>
+          <img src="https://img.itch.zone/aW1nLzI3MTQ5NDI5LnBuZw==/original/uFzcei.png" alt="2.5D Game Template" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.cap').classList.add('no-art')">
+          <div class="cap-body">
+            <span class="tag">Template · $25</span>
+            <h3>2.5D Game Template</h3>
+            <p>3D environments with 2D sprite characters — Unity and Unreal.</p>
+          </div>
+        </a>
+
+        <a class="cap" href="https://gameseedassets.itch.io/cute-environment-pack" target="_blank" rel="noopener" data-reveal>
+          <img src="https://img.itch.zone/aW1nLzI0MTkzMTY1LnBuZw==/original/M4u7kf.png" alt="Cute Environment Pack" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.cap').classList.add('no-art')">
+          <div class="cap-body">
+            <span class="tag">2D art · $10</span>
+            <h3>Cute Environment Pack</h3>
+            <p>100+ handcrafted sprites: trees, rocks, plants, ruins and props.</p>
+          </div>
+        </a>
+
+        <a class="cap" href="https://gameseedassets.itch.io/cute-environment-pack-2" target="_blank" rel="noopener" data-reveal>
+          <img src="https://img.itch.zone/aW1nLzI0MjA4OTQ0LnBuZw==/original/EKhL1u.png" alt="Cute Environment Pack 2" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.cap').classList.add('no-art')">
+          <div class="cap-body">
+            <span class="tag">2D art · $5</span>
+            <h3>Cute Environment Pack 2</h3>
+            <p>Dark-toned cartoon set with vegetation, props and animated fire.</p>
+          </div>
+        </a>
+
+        <a class="cap" href="https://gameseedassets.itch.io/cartoon-trees-pack" target="_blank" rel="noopener" data-reveal>
+          <img src="https://img.itch.zone/aW1nLzI0ODQ2Mjk4LnBuZw==/original/u6clB7.png" alt="Cartoon Trees Pack" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.cap').classList.add('no-art')">
+          <div class="cap-body">
+            <span class="tag">2D art · $1</span>
+            <h3>Cartoon Trees Pack</h3>
+            <p>Handcrafted trees, bamboo and bushes for 2D environments.</p>
+          </div>
+        </a>
+        <a class="cap" href="https://gameseedassets.itch.io/25d-engine" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/products/engine25d-700.webp" srcset="assets/img/products/engine25d-700.webp 700w, assets/img/products/engine25d-1400.webp 1280w" sizes="(max-width: 900px) 92vw, 280px" alt="2.5D Engine" width="1280" height="720" loading="lazy" decoding="async">
+          <div class="cap-body">
+            <span class="tag">Engine</span>
+            <h3>2.5D Engine</h3>
+            <p>2.5D worlds with proper depth, sorting and camera handling.</p>
+          </div>
+        </a>
+
+        <a class="cap" href="https://assetstore.unity.com/packages/vfx/particles/fog-particles-351840" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/products/fog-700.webp" srcset="assets/img/products/fog-700.webp 700w, assets/img/products/fog-1400.webp 1400w" sizes="(max-width: 900px) 92vw, 280px" alt="Fog Particles" width="1400" height="933" loading="lazy" decoding="async">
+          <div class="cap-body">
+            <span class="tag tag-free">Free</span>
+            <h3>Fog Particles</h3>
+            <p>Drop-in atmospheric fog for depth and mood.</p>
+          </div>
+        </a>
+
+        <a class="cap" href="https://assetstore.unity.com/packages/vfx/particles/rain-particles-351846" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/products/rain-700.webp" srcset="assets/img/products/rain-700.webp 700w, assets/img/products/rain-1400.webp 1400w" sizes="(max-width: 900px) 92vw, 280px" alt="Rain Particles" width="1400" height="933" loading="lazy" decoding="async">
+          <div class="cap-body">
+            <span class="tag tag-free">Free</span>
+            <h3>Rain Particles</h3>
+            <p>Simple, performant rain with splash particles.</p>
+          </div>
+        </a>
+
+        <a class="cap" href="https://gameseedassets.itch.io/" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/posters/fire-1280.webp" alt="Low Poly Fire Particles" width="1280" height="686" loading="lazy" decoding="async">
+          <div class="cap-body">
+            <span class="tag tag-free">Free</span>
+            <h3>Low Poly Fire</h3>
+            <p>Campfire and bonfire VFX in five colour variants.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ REVIEWS ════════ -->
+  <section class="section reviews-sec" id="reviews">
+    <div class="container">
+      <div class="trust" id="trust">
+        <div class="trust-core" data-reveal>
+          <div class="trust-num"><span id="trust-count">0</span><span class="plus">+</span></div>
+          <p class="trust-label">developers have used Game Seed Assets<br>— and the community keeps growing every day.</p>
+          <div class="trust-seeds"><span></span><span></span><span></span></div>
+        </div>
+
+        <!-- 6 featured reviews float here; the rest scroll below. Both come from
+             the REVIEWS list at the top of assets/main.js -->
+        <div class="bubbles" id="bubbles" aria-label="Asset Store reviews"></div>
+      </div>
+    </div>
+
+    <div class="rmarquee" id="more-reviews" data-anim-zone aria-label="More reviews">
+      <div class="rtrack" id="rtrack"></div>
+    </div>
+
     <div class="container">
 
-      <div class="section-head" data-reveal="">
-        <div class="s-label">Our Catalogue</div>
-        <h2 class="s-heading">Featured <em>Assets</em></h2>
-      </div>
-
-      <!-- Bento grid — staggered reveal -->
-      <div class="bento" data-stagger="0.1">
-
-        <!-- 1. Rope Puzzle — wide -->
-        <div class="bcard" data-reveal="">
-          <img class="bcard-media" src="assets/images/products/rope-puzzle-new.png" alt="Rope Puzzle Game Template">
-          <div class="bcard-veil"></div>
-          <div class="bcard-body">
-            <div class="bcard-tag">Game Template</div>
-            <div class="bcard-name">Rope Puzzle<br>Game Template</div>
-            <div class="bcard-btns">
-              <a href="https://assetstore.unity.com/packages/templates/packs/rope-puzzle-game-template-351506"
-                 target="_blank" rel="noopener" class="bbtn bbtn-g">Get on Unity</a>
-              <a href="https://gameseedassets.itch.io/rope-puzzle-demo"
-                 target="_blank" rel="noopener" class="bbtn bbtn-o">&#9654; Play Demo</a>
-            </div>
+      <div class="cm-note" data-reveal>
+        <div class="cm-note-copy">
+          <div class="cm-by">
+            <img src="assets/img/code-monkey.webp" alt="" width="30" height="30" loading="lazy">
+            <span><b>Featured by Code Monkey</b></span>
           </div>
+          <blockquote class="cm-quote">“I love the cuteness of this one!”</blockquote>
+          <a class="link-arrow" href="https://youtu.be/xDeGnrX1ds4?t=215" target="_blank" rel="noopener">YouTube <span>↗</span></a>
         </div>
-
-        <!-- 2. Bull Rider -->
-        <div class="bcard" data-reveal="">
-          <img class="bcard-media" src="assets/images/products/bull-rider-new.png" alt="Bull Rider Game Template">
-          <div class="bcard-veil"></div>
-          <div class="bcard-body">
-            <div class="bcard-tag">Game Template</div>
-            <div class="bcard-name">Bull Rider<br>Game Template</div>
-            <div class="bcard-btns">
-              <a href="https://assetstore.unity.com/packages/templates/packs/bull-rider-game-template-354256"
-                 target="_blank" rel="noopener" class="bbtn bbtn-g">Get on Unity</a>
-              <a href="https://gameseedassets.itch.io/bull-rider-demo"
-                 target="_blank" rel="noopener" class="bbtn bbtn-o">&#9654; Play Demo</a>
-            </div>
-          </div>
+        <div class="player" data-src="assets/video/fire.mp4" data-poster="assets/img/posters/fire-1280.webp">
+          <img src="assets/img/posters/fire-1280.webp" alt="Low Poly Fire Particles clip" width="1280" height="686" loading="lazy" decoding="async">
+          <button class="play" aria-label="Play the Low Poly Fire Particles clip"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
         </div>
-
-        <!-- 3. Dark 2D World -->
-        <div class="bcard" data-reveal="">
-          <img class="bcard-media" src="assets/images/products/dark-env-new.png" alt="Dark 2D World Environment Pack">
-          <div class="bcard-veil"></div>
-          <div class="bcard-body">
-            <div class="bcard-tag">Environment Pack</div>
-            <div class="bcard-name">Dark 2D World<br>Environment Pack</div>
-            <div class="bcard-btns">
-              <a href="https://assetstore.unity.com/packages/2d/environments/dark-2d-world-environment-pack-366952"
-                 target="_blank" rel="noopener" class="bbtn bbtn-g">Get on Unity</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. Fog Particles -->
-        <div class="bcard" data-reveal="">
-          <img class="bcard-media" src="assets/images/products/Fog Pack.png" alt="Fog Particles">
-          <div class="bcard-veil"></div>
-          <div class="bcard-body">
-            <div class="bcard-tag">VFX &middot; Particles</div>
-            <div class="bcard-name">Fog Particles</div>
-            <div class="bcard-btns">
-              <a href="https://assetstore.unity.com/packages/vfx/particles/fog-particles-351840"
-                 target="_blank" rel="noopener" class="bbtn bbtn-gold">FREE &nbsp;&#9733;</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Rain Particles — wide -->
-        <div class="bcard" data-reveal="">
-          <img class="bcard-media" src="assets/images/products/Simple Rain.png" alt="Rain Particles">
-          <div class="bcard-veil"></div>
-          <div class="bcard-body">
-            <div class="bcard-tag">VFX &middot; Particles</div>
-            <div class="bcard-name">Rain Particles</div>
-            <div class="bcard-btns">
-              <a href="https://assetstore.unity.com/packages/vfx/particles/fog-particles-351840"
-                 target="_blank" rel="noopener" class="bbtn bbtn-gold">FREE &nbsp;&#9733;</a>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /bento -->
-    </div><!-- /container -->
-  </section>
-
-  <div class="divider" style="margin-top:80px;"></div>
-
-  <!-- ═══════════════════════════════════════════
-       TRUST BAR
-  ═══════════════════════════════════════════ -->
-  <section id="trust" class="section">
-    <div class="container">
-      <div class="trust-inner" data-reveal="scale">
-        <img class="trust-leaf leaf-a" src="assets/images/leaf.png" alt="">
-        <img class="trust-leaf leaf-b" src="assets/images/leaf.png" alt="">
-        <div class="trust-num" id="trust-num"><span id="trust-count">0</span><span class="symbol-font">+</span></div>
-        <div class="trust-label">
-          developers have used Game Seed Assets<br>
-          — and the community keeps growing every day.
-        </div>
-        <div class="trust-seeds">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <div class="review-floaters" aria-label="Community reviews">
-        <article class="review-card r1">
-          <div class="review-meta"><span>Razor_H3o</span><span class="stars">★★★★★</span></div>
-          <strong>Brilliant Asset - Works out of the box and looks great!</strong>
-          <p>Thank you publisher! It worked out of the box in HDRP in Unity 6.4.</p>
-        </article>
-        <article class="review-card r2">
-          <div class="review-meta"><span>funstormtechnologies</span><span class="stars">★★★★★</span></div>
-          <strong>very good</strong>
-          <p>Good and easy to understand and developer helps if you face any problem.</p>
-        </article>
-        <article class="review-card r3">
-          <div class="review-meta"><span>DenisAntiPozitiv</span><span class="stars">★★★★★</span></div>
-          <strong>Well-Made Asset</strong>
-          <p>The asset is clearly well-crafted. The documentation is thorough and the team is very responsive.</p>
-        </article>
-        <article class="review-card r4">
-          <div class="review-meta"><span>Mur_Konstantin</span><span class="stars">★★★★★</span></div>
-          <strong>Me like!)</strong>
-          <p>It looks beautiful, the setup doesn't seem complicated, and the documentation and server discord are very pleasing.</p>
-        </article>
-        <article class="review-card r5">
-          <div class="review-meta"><span>alexmerkotan</span><span class="stars">★★★★★</span></div>
-          <strong>Excellent support and solid template!</strong>
-          <p>The author responded very quickly and helped me fix everything. Highly recommended.</p>
-        </article>
       </div>
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- ═══════════════════════════════════════════
-       HIRE US
-  ═══════════════════════════════════════════ -->
-  <section id="hire" class="section">
+  <!-- ════════ WORK FOR HIRE + SUPPORT ════════ -->
+  <section class="section duo" id="hire">
     <div class="container">
-      <div class="hire-grid">
+      <div class="duo-grid">
 
-        <!-- Left copy -->
-        <div data-reveal="left">
-          <div class="s-label">Need Custom Assets &amp; Games?</div>
-          <h2 class="hire-title">
-            Need Custom<br><em>Art Assets</em><br>or Games?
-          </h2>
-          <div class="hire-pill">
-            🌱 We cost less than 95% of other asset makers &amp; freelancers
-          </div>
-          <p class="hire-desc">
-            From <strong>COMPLETE GAMES</strong> to <strong>ART ASSETS</strong>,
-            we deliver studio-quality work at indie-friendly prices.
-          </p>
-          <a href="mailto:gameseedassets@gmail.com" class="hire-mailto big-mail">
-            Email Us
-          </a>
+        <div class="duo-card" data-reveal>
+          <h3>Need something custom?</h3>
+          <p>Need a custom asset, system or gameplay solution? We also work with developers on custom game development and assets.</p>
+          <a class="btn btn-green" href="mailto:gameseedassets@gmail.com?subject=Custom%20project%20enquiry">Work with us</a>
         </div>
 
-        <div class="hire-panel" data-reveal="right">
-          <img class="hire-panel-leaf" src="assets/images/leaf.png" alt="">
-          <div class="hire-panel-title">gameseedassets@gmail.com</div>
-          <div class="hire-panel-copy">Tell us what you need built, the style you want, and your timeline.</div>
-          <a href="mailto:gameseedassets@gmail.com" class="hire-panel-button">Email Us Now</a>
+        <div class="duo-card" id="support" data-reveal>
+          <h3>Need a little help?</h3>
+          <p>Get 3 hours of free support with your asset — I'll walk you through doubts about how it works, the best way to use it in your project, bug fixes, and exporting your build.</p>
+          <a class="btn btn-green" href="https://calendly.com/gameseedassets/30min" target="_blank" rel="noopener">Book a call</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- ═══════════════════════════════════════════
-       SOCIAL / COMMUNITY
-  ═══════════════════════════════════════════ -->
-  <section id="social" class="section">
-    <div class="container">
-      <div class="social-box" data-reveal="scale">
-
-        <div class="social-ring">
-          <img src="assets/images/logo.png" alt="Game Seed Assets">
-        </div>
-
-        <div class="s-label" style="justify-content:center; margin-bottom:10px;">
-          Find Us Everywhere
-        </div>
-        <h2 class="s-heading" style="font-size:clamp(1.4rem,3vw,2.2rem);">
-          Game Seed <em>Assets</em>
-        </h2>
-
-        <div class="soc-grid">
-
-          <a href="https://discord.com/invite/sbjZXg2YJ9" target="_blank" rel="noopener" class="soc-link">
-            <div class="soc-icon soc-mark">D</div>
-            Discord
-            <span class="soc-note">← Giveaways!</span>
-          </a>
-
-          <a href="https://instagram.com/gameseedassets" target="_blank" rel="noopener" class="soc-link">
-            <div class="soc-icon"><img src="assets/images/icons/Insta.png" alt=""></div>
-            Instagram
-          </a>
-
-          <a href="https://www.youtube.com/@GameSeedAssets" target="_blank" rel="noopener" class="soc-link">
-            <div class="soc-icon"><img src="assets/images/icons/Youtube.png" alt=""></div>
-            YouTube
-          </a>
-
-          <a href="https://gameseedassets.itch.io/" target="_blank" rel="noopener" class="soc-link">
-            <div class="soc-icon"><img src="assets/images/icons/Itch.io.png" alt=""></div>
-            Itch.io
-          </a>
-
-          <a href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener" class="soc-link">
-            <div class="soc-icon"><img src="assets/images/icons/Unity.png" alt=""></div>
-            Unity
-          </a>
-
-          <a href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener" class="soc-link">
-            <div class="soc-icon"><img src="assets/images/icons/Fab.png" alt=""></div>
-            Fab.com
-          </a>
-
-        </div>
+  <!-- ════════ FINAL CTA ════════ -->
+  <section class="final">
+    <div class="container" data-reveal>
+      <div class="row-btns center">
+        <a class="btn btn-green btn-lg" href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener">Explore assets →</a>
+        <a class="btn btn-ghost btn-lg" href="https://discord.com/invite/sbjZXg2YJ9" target="_blank" rel="noopener">Join the Discord</a>
       </div>
+      <div class="final-stores">
+        <a href="https://assetstore.unity.com/publishers/132038" target="_blank" rel="noopener"><img src="assets/img/icons/unity.png" alt="" width="22" height="22" loading="lazy">Unity Asset Store</a>
+        <a href="https://www.fab.com/sellers/Game%20Seed%20Assets" target="_blank" rel="noopener"><img src="assets/img/icons/fab.png" alt="" width="22" height="22" loading="lazy">Fab Marketplace</a>
+        <a href="https://gameseedassets.itch.io/" target="_blank" rel="noopener"><img src="assets/img/icons/itch.png" alt="" width="22" height="22" loading="lazy">itch.io</a>
+        <a href="https://www.youtube.com/@GameSeedAssets" target="_blank" rel="noopener"><img src="assets/img/icons/youtube.png" alt="" width="22" height="22" loading="lazy">YouTube</a>
+        <a href="https://instagram.com/gameseedassets" target="_blank" rel="noopener"><img src="assets/img/icons/insta.png" alt="" width="22" height="22" loading="lazy">Instagram</a>
+      </div>
+      <p class="tagline">Plant the right assets. Build better games.</p>
     </div>
   </section>
+</main>
 
-  <!-- ═══════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════ -->
-  <footer>
-    <span>&copy; 2026 Game Seed Assets &mdash; All Rights Reserved</span>
-    <span>
-      <a href="https://atgstudiosinfo.wixsite.com/my-site-1" target="_blank" rel="noopener">Website</a>
-      &nbsp;&middot;&nbsp;
-      <a href="mailto:gameseedassets@gmail.com">Contact</a>
-      &nbsp;&middot;&nbsp;
-      <a href="https://discord.com/invite/sbjZXg2YJ9" target="_blank" rel="noopener">Discord</a>
-    </span>
-  </footer>
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="assets/img/logo-256.webp" alt="" width="24" height="24" loading="lazy">
+    <span>© <span id="year">2026</span> Game Seed Assets</span>
+  </div>
+  <nav class="footer-links" aria-label="Footer">
+    <a href="mailto:gameseedassets@gmail.com">Contact</a>
+    <a href="https://discord.com/invite/sbjZXg2YJ9" target="_blank" rel="noopener">Discord</a>
+  </nav>
+</footer>
 
-  <!-- Scripts -->
-  <script src="assets/main.js"></script>
-
+<script src="assets/main.js" defer></script>
 </body>
 </html>
