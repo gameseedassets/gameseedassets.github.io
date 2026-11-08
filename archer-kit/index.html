@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archer Kit: Unity Bow &amp; Arrow Game Template | Game Seed Assets</title>
+  <meta name="description" content="Unity archery game template with bow-and-arrow physics, aiming and trajectory projection, 5 bows, 5 arrows, explosive hits and FPS movement. Built-in and URP; PC, WebGL and mobile.">
+  <link rel="canonical" href="https://gameseedassets.store/archer-kit/">
+  <meta name="theme-color" content="#070b08">
+  <script>document.documentElement.classList.add('js')</script>
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Game Seed Assets">
+  <meta property="og:title" content="Archer Kit: Unity Archery Game Template">
+  <meta property="og:description" content="Unity archery game template with bow-and-arrow physics, aiming and trajectory projection, 5 bows, 5 arrows, explosive hits and FPS movement. Built-in and URP; PC, WebGL and mobile.">
+  <meta property="og:url" content="https://gameseedassets.store/archer-kit/">
+  <meta property="og:image" content="https://gameseedassets.store/assets/img/og/archer-kit.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Archer Kit: Unity Archery Game Template">
+  <meta name="twitter:description" content="Unity archery game template with bow-and-arrow physics, aiming and trajectory projection, 5 bows, 5 arrows, explosive hits and FPS movement. Built-in and URP; PC, WebGL and mobile.">
+  <meta name="twitter:image" content="https://gameseedassets.store/assets/img/og/archer-kit.jpg">
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/assets/img/logo-180.png">
+  <link rel="preload" href="/assets/fonts/IntegralCF-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Product",
+   "name": "Archer Kit",
+   "description": "Unity archery game template with bow-and-arrow physics, aiming and trajectory projection, 5 bows, 5 arrows, explosive hits and FPS movement. Built-in and URP; PC, WebGL and mobile.",
+   "url": "https://gameseedassets.store/archer-kit/",
+   "image": [
+    "https://gameseedassets.store/assets/img/og/archer-kit.jpg",
+    "https://gameseedassets.store/assets/img/products/archer-key-1400.webp"
+   ],
+   "category": "Game templates",
+   "brand": {
+    "@type": "Brand",
+    "name": "Game Seed Assets"
+   },
+   "offers": {
+    "@type": "Offer",
+    "url": "https://assetstore.unity.com/packages/templates/packs/archer-kit-game-template-archery-system-378546",
+    "price": "25",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+     "@type": "Organization",
+     "name": "Unity Asset Store"
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://gameseedassets.store/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Game templates",
+     "item": "https://gameseedassets.store/#collection"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Archer Kit",
+     "item": "https://gameseedassets.store/archer-kit/"
+    }
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://gameseedassets.store/#org",
+   "name": "Game Seed Assets",
+   "url": "https://gameseedassets.store/",
+   "logo": "https://gameseedassets.store/assets/img/logo-256.webp",
+   "email": "gameseedassets@gmail.com",
+   "slogan": "Plant the right assets. Build better games.",
+   "description": "Independent publisher of Unity and Unreal game templates, 2D environments and VFX, sold on the Unity Asset Store, Fab and itch.io.",
+   "sameAs": [
+    "https://assetstore.unity.com/publishers/132038",
+    "https://www.fab.com/sellers/Game%20Seed%20Assets",
+    "https://gameseedassets.itch.io/",
+    "https://www.youtube.com/@GameSeedAssets",
+    "https://instagram.com/gameseedassets",
+    "https://discord.com/invite/sbjZXg2YJ9"
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body class="page">
+
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<header class="nav scrolled" id="nav">
+  <a href="/" class="brand" aria-label="Game Seed Assets home">
+    <img src="/assets/img/logo-256.webp" alt="" width="32" height="32">
+    <span>Game Seed<br>Assets</span>
+  </a>
+  <nav class="nav-links" id="nav-links" aria-label="Main">
+    <a href="/#assets">Assets</a>
+    <a href="/#collection">Collection</a>
+    <a href="/#reviews">Reviews</a>
+    <a href="/#about">About</a>
+    <a href="/#hire">Hire Us</a>
+  </nav>
+  <div class="nav-right">
+    <a class="btn btn-green btn-sm nav-cta" href="https://assetstore.unity.com/packages/templates/packs/archer-kit-game-template-archery-system-378546" target="_blank" rel="noopener">Get Archer Kit</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main" class="pg">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/#collection">Game templates</a><span aria-hidden="true">/</span><span aria-current="page">Archer Kit</span>
+    </nav>
+
+    <section class="pg-hero">
+      <div class="pg-media"><div class="player" data-src="/assets/video/archer.mp4" data-poster="/assets/img/products/archer-key-1400.webp"><img src="/assets/img/products/archer-key-1400.webp" alt="Archer Kit screenshot" width="1400" height="933" fetchpriority="high"><button class="play" aria-label="Play the Archer Kit video"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button></div></div>
+      <div class="pg-info">
+        <div class="slide-tags"><span class="tag">Game templates</span><span class="tag tag-price">$25</span></div>
+        <h1>Archer Kit: Unity Archery Game Template</h1>
+        <p>Archer Kit gives you a working bow-and-arrow game in Unity. Draw, aim with a projected trajectory, release, and watch arrows fly and land with real physics.</p>
+        <p>Use it as the starting point for an archery, FPS or survival game, or take the archery system and drop it into a project you already have.</p>
+        <div class="pg-buy"><a class="btn btn-green" href="https://assetstore.unity.com/packages/templates/packs/archer-kit-game-template-archery-system-378546" target="_blank" rel="noopener"><img src="/assets/img/icons/unity.png" alt="" width="18" height="18">Unity Asset Store</a><a class="btn btn-ghost" href="https://www.fab.com/listings/a5deebec-b3e8-46a7-9995-bffbb33b8b37" target="_blank" rel="noopener"><img src="/assets/img/icons/fab.png" alt="" width="18" height="18">Fab Marketplace</a></div>
+        
+        <p class="pg-support">Includes <a href="#support">3 hours of free 1:1 support</a>: setup, questions, bug fixes and exporting your build.</p>
+      </div>
+    </section>
+
+    <section class="pg-grid">
+      <div class="pg-card">
+        <h2>What's included</h2>
+        <ul class="pg-feats"><li>Realistic bow and arrow mechanics</li><li>Precision aiming with trajectory projection</li><li>5 unique bows with different styles</li><li>5 custom arrows with different speeds and effects</li><li>Explosive hit effects</li><li>FPS movement mode with jumping</li><li>Runs on PC, WebGL and mobile</li></ul>
+      </div>
+      <div class="pg-card">
+        <h2>Technical details</h2>
+        <dl class="pg-specs"><div><dt>Unity version</dt><dd>2022.3 or newer</dd></div><div><dt>Render pipelines</dt><dd>Built-in, URP</dd></div><div><dt>Platforms</dt><dd>PC, WebGL, mobile</dd></div><div><dt>Package version</dt><dd>1.0.1</dd></div><div><dt>Download size</dt><dd>22.7 MB</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="pg-sec">
+      <h2>Frequently asked questions</h2>
+      <div class="faq"><details><summary>Which Unity versions and render pipelines does it support?</summary><p>Archer Kit is built for 2022.3 or newer and works with Built-in, URP. It runs on PC, WebGL, mobile.</p></details><details><summary>Where can I get it?</summary><p>Archer Kit is available on Unity Asset Store, Fab Marketplace. Use the buttons at the top of this page.</p></details><details><summary>Can I use it in a commercial game?</summary><p>Yes. Assets from the Unity Asset Store come with Unity's standard EULA, which allows them in commercial games. Purchases on Fab and itch.io follow those stores' licences.</p></details><details><summary>What if I get stuck?</summary><p>Every asset comes with 3 hours of free 1:1 support. <a href="https://calendly.com/gameseedassets/30min" target="_blank" rel="noopener">Book a call</a> or ask in the <a href="https://discord.com/invite/sbjZXg2YJ9" target="_blank" rel="noopener">Discord</a>.</p></details></div>
+    </section>
+
+    <section class="pg-sec">
+      <div class="sec-head">
+        <h2>More from <span class="grad">Game Seed Assets</span></h2>
+        <a class="link-arrow" href="/#collection">See the full collection <span>→</span></a>
+      </div>
+      <div class="caps caps-3"><article class="cap" data-cat="templates">
+  <a class="cap-media" href="/grass-cutting-simulator/" tabindex="-1" aria-hidden="true"><img src="/assets/img/products/grass-key-700.webp" alt="Grass Cutting Simulator: game templates for Unity" width="700" height="467" loading="lazy" decoding="async"></a>
+  <div class="cap-body">
+    <div class="cap-tags"><span class="tag">Game templates</span></div>
+    <h3><a href="/grass-cutting-simulator/">Grass Cutting Simulator</a></h3>
+    <p>Cut grass, grow your blade and slice through fruit and trees. 18 levels, 5 blades, boosts.</p>
+    <div class="cap-stores"><a class="store-chip" href="https://assetstore.unity.com/packages/slug/413718" target="_blank" rel="noopener" aria-label="Grass Cutting Simulator on Unity Asset Store"><img src="/assets/img/icons/unity.png" alt="" width="16" height="16" loading="lazy">Unity</a><a class="cap-more" href="/grass-cutting-simulator/">Details →</a></div>
+  </div>
+</article>
+<article class="cap" data-cat="templates">
+  <a class="cap-media" href="/arrow-escape/" tabindex="-1" aria-hidden="true"><img src="/assets/img/products/arrow-key-700.webp" alt="Arrow Escape: game templates for Unity" width="700" height="467" loading="lazy" decoding="async"></a>
+  <div class="cap-body">
+    <div class="cap-tags"><span class="tag">Game templates</span><span class="tag tag-price">$16</span></div>
+    <h3><a href="/arrow-escape/">Arrow Escape</a></h3>
+    <p>Arrow puzzle game with a level editor, image-to-level generator, 30 levels and endless mode.</p>
+    <div class="cap-stores"><a class="store-chip" href="https://assetstore.unity.com/packages/templates/packs/arrow-escape-full-game-template-editor-procedural-level-generati-398034" target="_blank" rel="noopener" aria-label="Arrow Escape on Unity Asset Store"><img src="/assets/img/icons/unity.png" alt="" width="16" height="16" loading="lazy">Unity</a><a class="store-chip" href="https://www.fab.com/listings/9c63b2a3-393b-4747-ac67-fffd4368caf5" target="_blank" rel="noopener" aria-label="Arrow Escape on Fab Marketplace"><img src="/assets/img/icons/fab.png" alt="" width="16" height="16" loading="lazy">Fab</a><a class="store-chip" href="https://gameseedassets.itch.io/arrow-escape-full-game" target="_blank" rel="noopener" aria-label="Arrow Escape on itch.io"><img src="/assets/img/icons/itch.png" alt="" width="16" height="16" loading="lazy">itch.io</a><a class="cap-more" href="/arrow-escape/">Details →</a></div>
+  </div>
+</article>
+<article class="cap" data-cat="templates">
+  <a class="cap-media" href="/sling-shooter/" tabindex="-1" aria-hidden="true"><img src="/assets/img/products/sling-key-700.webp" alt="Sling Shooter: game templates for Unity" width="700" height="467" loading="lazy" decoding="async"></a>
+  <div class="cap-body">
+    <div class="cap-tags"><span class="tag">Game templates</span><span class="tag tag-price">$50</span></div>
+    <h3><a href="/sling-shooter/">Sling Shooter</a></h3>
+    <p>Physics slingshot gameplay with stickman combat, 10 levels and AdMob, ready to rebrand.</p>
+    <div class="cap-stores"><a class="store-chip" href="https://assetstore.unity.com/packages/templates/packs/stickman-shooter-game-template-379820" target="_blank" rel="noopener" aria-label="Sling Shooter on Unity Asset Store"><img src="/assets/img/icons/unity.png" alt="" width="16" height="16" loading="lazy">Unity</a><a class="store-chip" href="https://www.fab.com/listings/a2c636d2-d7d1-403a-9e7f-30eb3eac6356" target="_blank" rel="noopener" aria-label="Sling Shooter on Fab Marketplace"><img src="/assets/img/icons/fab.png" alt="" width="16" height="16" loading="lazy">Fab</a><a class="store-chip" href="https://gameseedassets.itch.io/sling-shooter" target="_blank" rel="noopener" aria-label="Sling Shooter on itch.io"><img src="/assets/img/icons/itch.png" alt="" width="16" height="16" loading="lazy">itch.io</a><a class="cap-more" href="/sling-shooter/">Details →</a></div>
+  </div>
+</article></div>
+    </section>
+
+    <section class="pg-sec duo-grid" id="support">
+      <div class="duo-card">
+        <h3>Need a little help?</h3>
+        <p>Get 3 hours of free support with your asset. I'll walk you through how it works, the best way to use it in your project, bug fixes, and exporting your build.</p>
+        <a class="btn btn-green" href="https://calendly.com/gameseedassets/30min" target="_blank" rel="noopener">Book a call</a>
+      </div>
+      <div class="duo-card">
+        <h3>Need something custom?</h3>
+        <p>Need a custom asset, system or gameplay solution? We also work with developers on custom game development and assets.</p>
+        <a class="btn btn-green" href="mailto:gameseedassets@gmail.com?subject=Custom%20project%20enquiry">Work with us</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="/assets/img/logo-256.webp" alt="" width="24" height="24" loading="lazy">
+    <span>© <span id="year">2026</span> Game Seed Assets</span>
+  </div>
+  <nav class="footer-links" aria-label="Footer">
+    <a href="/#collection">All assets</a>
+    <a href="mailto:gameseedassets@gmail.com">Contact</a>
+    <a href="https://discord.com/invite/sbjZXg2YJ9" target="_blank" rel="noopener">Discord</a>
+  </nav>
+</footer>
+
+<script src="/assets/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,864 @@
+{
+  "_readme": "Single source for the collection grid, the asset pages, the reviews and sitemap.xml. Edit this file, then run: python tools/build.py",
+  "categories": [
+    {
+      "id": "templates",
+      "label": "Game templates"
+    },
+    {
+      "id": "art",
+      "label": "2D & environments"
+    },
+    {
+      "id": "vfx",
+      "label": "VFX"
+    },
+    {
+      "id": "models",
+      "label": "3D models"
+    },
+    {
+      "id": "tools",
+      "label": "Engines & tools"
+    }
+  ],
+  "products": [
+    {
+      "slug": "grass-cutting-simulator",
+      "name": "Grass Cutting Simulator",
+      "cat": "templates",
+      "price": "",
+      "blurb": "Cut grass, grow your blade and slice through fruit and trees. 18 levels, 5 blades, boosts.",
+      "image": "assets/img/products/grass-key-700.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/slug/413718"
+      },
+      "page": {
+        "h1": "Grass Cutting Simulator: Unity Game Template",
+        "title": "Grass Cutting Simulator: Unity Game Template",
+        "description": "Grass Cutting Simulator is a complete Unity game template: cut grass to grow your blade, slice fruit and trees, beat the clock with boosts and earn three stars across 18 levels.",
+        "hero": "assets/img/products/grass-key-1400.webp",
+        "video": "assets/video/grass.mp4",
+        "youtube": "ABvdeUee7Xg",
+        "intro": [
+          "Grass Cutting Simulator is a complete, ready-to-play Unity game template. Steer a spinning blade across the field: every patch of grass you cut makes the blade grow, and a bigger blade can slice through fruit and even trees. Too small? The game tells you to grow first.",
+          "Each of the 18 levels has its own field with flowers, patterns and fences. Speed and time boosts help you beat the clock, and a fast finish earns three stars and a treasure chest."
+        ],
+        "features": [
+          "Complete game: 18 ready-to-play levels",
+          "5 blades, each with 4 sizes, and a blade shop",
+          "Grow-as-you-cut mechanic: get bigger to slice fruit and trees",
+          "Fields with flowers, patterns and fences",
+          "Speed and time boosts",
+          "3-star rating and treasure chest rewards",
+          "Portrait phone and landscape layouts"
+        ],
+        "specs": {
+          "Unity version": "Unity 6.5 (6000.5) or newer",
+          "Render pipelines": "URP",
+          "Platforms": "Mobile and PC",
+          "Levels": "18",
+          "Blades": "5 blades × 4 sizes"
+        },
+        "related": [
+          "arrow-escape",
+          "rope-puzzle",
+          "archer-kit"
+        ]
+      }
+    },
+    {
+      "slug": "arrow-escape",
+      "name": "Arrow Escape",
+      "cat": "templates",
+      "price": "$16",
+      "blurb": "Arrow puzzle game with a level editor, image-to-level generator, 30 levels and endless mode.",
+      "imageUrl": "https://assetstorev1-prd-cdn.unity3d.com/key-image/50fe0a0a-464b-4f0c-8b0c-e6606fc31b41.jpg",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/templates/packs/arrow-escape-full-game-template-editor-procedural-level-generati-398034",
+        "fab": "https://www.fab.com/listings/9c63b2a3-393b-4747-ac67-fffd4368caf5",
+        "itch": "https://gameseedassets.itch.io/arrow-escape-full-game"
+      },
+      "image": "assets/img/products/arrow-key-700.webp",
+      "page": {
+        "h1": "Arrow Escape: Unity Arrow Puzzle Game Template",
+        "title": "Arrow Escape: Unity Arrow Puzzle Game Template",
+        "description": "Arrow Escape is a complete Unity arrow puzzle game template with a built-in level editor, an image-to-level generator, 30 hand-made levels, endless mode and dark and light themes.",
+        "hero": "assets/img/products/arrow-key-1400.webp",
+        "video": "assets/video/arrow.mp4",
+        "intro": [
+          "Arrow Escape is a full grid-based arrow puzzle game for Unity. Tap an arrow and it glides off the board if its path is clear, or bounces back if something is in the way. Clear every arrow to win.",
+          "It ships with a built-in level editor: turn any pixel art into a level in one click, and every generated level is always solvable. You can also drag any arrow to reshape it by hand."
+        ],
+        "features": [
+          "Grid-based arrow puzzle gameplay",
+          "Built-in level editor with automatic and manual generation",
+          "Image-to-level generator: any pixel art becomes a level",
+          "Generated levels are always solvable",
+          "30 hand-made levels plus endless mode",
+          "4 arrow designs: Arrow, Casual Snake, Pattern Snake and Pencil",
+          "Dark mode and light mode themes",
+          "Automatic camera zoom and responsive grid scaling"
+        ],
+        "specs": {
+          "Unity version": "Unity 6 (6000.0) or newer",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "Mobile, PC, WebGL",
+          "Package version": "1.0.1",
+          "Download size": "12.1 MB"
+        },
+        "reviewAsset": "Arrow Escape",
+        "related": [
+          "grass-cutting-simulator",
+          "rope-puzzle",
+          "sling-shooter"
+        ]
+      }
+    },
+    {
+      "slug": "paper-plane-controller",
+      "name": "Paper Plane Controller",
+      "cat": "tools",
+      "price": "$24.99",
+      "blurb": "Arcade paper plane flight controller with 10 plane designs, boost, crashes and a demo map. Unreal + Unity.",
+      "imageUrl": "https://media.fab.com/image_previews/gallery_images/3ec7e3d4-e187-4146-ad69-84d5028dd2dd/bf355260-3941-4ba4-a212-773e8150e0c6.jpg",
+      "stores": {
+        "fab": "https://www.fab.com/listings/ab07f0af-b8b7-4ed0-a237-562c625a9cec"
+      },
+      "soon": true,
+      "image": "assets/img/products/plane-key-700.webp",
+      "page": {
+        "h1": "Paper Plane Controller for Unreal Engine & Unity",
+        "title": "Paper Plane Controller for Unreal Engine & Unity",
+        "description": "Paper Plane Controller is a ready-to-use flight controller for paper plane games in Unreal Engine 5 and Unity, with 10 plane designs, boost, a dynamic camera, crashes and a demo map.",
+        "hero": "assets/img/products/plane-key-1400.webp",
+        "video": "assets/video/plane.mp4",
+        "youtube": "243T7QNmpeg",
+        "compat": "On Fab it supports Unreal Engine 5.6 to 5.8 on Windows, macOS and Linux, and the listing also includes a Unity version. The Unity Asset Store listing is coming soon.",
+        "intro": [
+          "Paper Plane Controller gives you smooth, arcade-style paper plane flight out of the box: perfect for casual flying games, obstacle courses and fast-paced aerial gameplay.",
+          "It includes 10 paper plane designs, a boost system, a dynamic camera, a crash system and a demo map. The forests and villages in the trailer are for demonstration only and are not included."
+        ],
+        "features": [
+          "10 unique paper plane designs",
+          "Smooth, customizable flight controller",
+          "Boost system and boost rings",
+          "Dynamic follow camera",
+          "Crash system",
+          "Demo map included",
+          "Game-ready Blueprints (Unreal) and a Unity version"
+        ],
+        "specs": {
+          "Engines": "Unreal Engine 5.6–5.8, Unity",
+          "Platforms": "Windows, macOS, Linux",
+          "Planes": "10 designs",
+          "Note": "Preview environments not included"
+        },
+        "related": [
+          "archer-kit",
+          "25d-engine",
+          "arrow-escape"
+        ]
+      }
+    },
+    {
+      "slug": "dark-2d-world-extended",
+      "name": "Dark 2D World: Extended",
+      "cat": "art",
+      "price": "$27.99",
+      "blurb": "250+ prefabs, 236 hand-drawn sprites, interactive water and a 15-minute playable level.",
+      "imageUrl": "https://assetstorev1-prd-cdn.unity3d.com/key-image/2d1fa638-102a-46e7-891a-df2f72b43b0a.jpg",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/2d/environments/dark-2d-world-extended-version-environment-pack-351850",
+        "fab": "https://www.fab.com/listings/3af31550-8623-4cb5-8964-74014ee270c8",
+        "itch": "https://gameseedassets.itch.io/limbo-like-environment-extended-version"
+      },
+      "image": "assets/img/products/darkx-key-700.webp",
+      "page": {
+        "h1": "Dark 2D World Extended: Limbo-Style 2D Pack for Unity",
+        "title": "Dark 2D World Extended: Limbo-Style Unity Pack",
+        "description": "Dark 2D World Extended is a Limbo-style 2D environment pack for Unity with 250+ prefabs, 236 hand-drawn sprites, interactive water, a character controller and a 15-minute level.",
+        "hero": "assets/img/products/darkx-key-1400.webp",
+        "video": "assets/video/darkx.mp4",
+        "youtube": "xSDIh7K42eE",
+        "intro": [
+          "Dark 2D World Extended is the full version of our free Dark 2D World pack: everything you need to build a dark, atmospheric 2D platformer in the style of Limbo.",
+          "It adds interactive water with ripples and floating objects, ladders, pushable crates, a character controller and a playable demo level of more than 15 minutes. Want to try the art first? Grab the free Dark 2D World."
+        ],
+        "features": [
+          "250+ ready-to-use prefabs",
+          "236 hand-drawn sprites at 1920×1080",
+          "Interactive water: ripples, floating objects and splashes",
+          "Character controller: run, jump, climb ladders, swim",
+          "Pushable crates and floating or sinking objects",
+          "3-layer parallax and follow camera",
+          "Ambient particles and post-processing",
+          "15+ minute playable demo level"
+        ],
+        "specs": {
+          "Unity version": "Unity 6 (6000.0) or newer",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "PC, WebGL, mobile",
+          "Package version": "1.0.1",
+          "Download size": "20.1 MB"
+        },
+        "related": [
+          "dark-2d-world",
+          "fog-particles",
+          "rain-particles"
+        ]
+      }
+    },
+    {
+      "slug": "archer-kit",
+      "name": "Archer Kit",
+      "cat": "templates",
+      "price": "$25",
+      "blurb": "Bow-and-arrow physics, aiming, 5 bows and 5 arrows. A full archery game to reskin.",
+      "image": "assets/img/products/archer-key-700.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/templates/packs/archer-kit-game-template-archery-system-378546",
+        "fab": "https://www.fab.com/listings/a5deebec-b3e8-46a7-9995-bffbb33b8b37"
+      },
+      "page": {
+        "h1": "Archer Kit: Unity Archery Game Template",
+        "title": "Archer Kit: Unity Bow & Arrow Game Template",
+        "description": "Unity archery game template with bow-and-arrow physics, aiming and trajectory projection, 5 bows, 5 arrows, explosive hits and FPS movement. Built-in and URP; PC, WebGL and mobile.",
+        "hero": "assets/img/products/archer-key-1400.webp",
+        "video": "assets/video/archer.mp4",
+        "intro": [
+          "Archer Kit gives you a working bow-and-arrow game in Unity. Draw, aim with a projected trajectory, release, and watch arrows fly and land with real physics.",
+          "Use it as the starting point for an archery, FPS or survival game, or take the archery system and drop it into a project you already have."
+        ],
+        "features": [
+          "Realistic bow and arrow mechanics",
+          "Precision aiming with trajectory projection",
+          "5 unique bows with different styles",
+          "5 custom arrows with different speeds and effects",
+          "Explosive hit effects",
+          "FPS movement mode with jumping",
+          "Runs on PC, WebGL and mobile"
+        ],
+        "specs": {
+          "Unity version": "2022.3 or newer",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "PC, WebGL, mobile",
+          "Package version": "1.0.1",
+          "Download size": "22.7 MB"
+        },
+        "reviewAsset": "Archer Kit"
+      }
+    },
+    {
+      "slug": "sling-shooter",
+      "name": "Sling Shooter",
+      "cat": "templates",
+      "price": "$50",
+      "blurb": "Physics slingshot gameplay with stickman combat, 10 levels and AdMob, ready to rebrand.",
+      "image": "assets/img/products/sling-key-700.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/templates/packs/stickman-shooter-game-template-379820",
+        "fab": "https://www.fab.com/listings/a2c636d2-d7d1-403a-9e7f-30eb3eac6356",
+        "itch": "https://gameseedassets.itch.io/sling-shooter"
+      },
+      "page": {
+        "h1": "Sling Shooter: Unity Slingshot Game Template",
+        "title": "Sling Shooter: Unity Slingshot Game Template",
+        "description": "Complete Unity slingshot game template with aim, pull and release controls, physics-based stickman combat, 10 demo levels, level editing tools and AdMob. Built-in and URP.",
+        "hero": "assets/img/products/sling-key-1400.webp",
+        "video": "assets/video/sling-loop.mp4",
+        "intro": [
+          "Sling Shooter is a complete physics shooting game for Unity. Aim, pull back and release, then watch stickmen and props fly and bounce with real physics.",
+          "On the Unity Asset Store it is listed as Stickman Shooter. It ships with demo levels, level editing tools and AdMob, so you can rebrand it and publish quickly."
+        ],
+        "features": [
+          "Aim, pull and release slingshot controls",
+          "Physics-based stickman combat",
+          "10 demo levels plus level editing tools",
+          "AdMob integration for monetisation",
+          "Runs on PC, WebGL and mobile",
+          "Clean, developer-friendly project setup"
+        ],
+        "specs": {
+          "Unity version": "2022.3 or newer",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "PC, WebGL, mobile",
+          "Package version": "1.0.3",
+          "Download size": "11.6 MB"
+        },
+        "reviewAsset": "Stickman Shooter"
+      }
+    },
+    {
+      "slug": "rope-puzzle",
+      "name": "Rope Puzzle",
+      "cat": "templates",
+      "price": "$65",
+      "blurb": "Untangle-the-rope puzzle with 40 levels, two game modes and power-ups. Playable demo.",
+      "image": "assets/img/products/rope-key-700.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/templates/packs/rope-puzzle-game-template-351506",
+        "fab": "https://www.fab.com/listings/27440db1-6463-41e4-b660-8524546fb830",
+        "itch": "https://gameseedassets.itch.io/twisted-rope"
+      },
+      "demo": "https://gameseedassets.itch.io/rope-puzzle-demo",
+      "page": {
+        "h1": "Rope Puzzle: Unity Rope Untangle Game Template",
+        "title": "Rope Puzzle: Unity Rope Untangle Game Template",
+        "description": "Unity rope-untangling puzzle game template (Twisted Ropes) with grid-based levels, 40 demo levels, sphere and stickman modes, timer challenges and freeze and cut power-ups.",
+        "hero": "assets/img/products/rope-key-1400.webp",
+        "video": "assets/video/rope-loop.mp4",
+        "youtube": "ffyl8_DI80s",
+        "intro": [
+          "Rope Puzzle (Twisted Ropes) is a casual untangle-the-rope game for Unity. Levels are built on a grid, so it is easy to design new puzzles and scale the difficulty.",
+          "Version 2.0 includes 40 demo levels, two game modes and power-ups. You can try the playable demo on itch.io before you buy."
+        ],
+        "features": [
+          "Grid-based rope untangling gameplay",
+          "40 demo levels with a difficulty curve",
+          "Sphere mode and stickman mode",
+          "Timer-based challenge system",
+          "2 power-ups: Freeze and Cut",
+          "Runs on PC, WebGL and mobile",
+          "Beginner-friendly, easy to modify and extend"
+        ],
+        "specs": {
+          "Unity version": "Unity 6 (6000.0) or newer",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "PC, WebGL, mobile",
+          "Package version": "2.0.0",
+          "Download size": "90.8 MB"
+        },
+        "reviewAsset": "Rope Puzzle"
+      }
+    },
+    {
+      "slug": "stickman-survival-shooter",
+      "name": "Stickman Survival Shooter",
+      "cat": "templates",
+      "price": "$45",
+      "blurb": "Full survival shooter game with a built-in level editor.",
+      "imageUrl": "https://assetstorev1-prd-cdn.unity3d.com/key-image/b34d5fb0-d9a1-479c-bb48-521269d85f96.jpg",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/templates/packs/stickman-survival-shooter-full-game-template-editor-398114",
+        "fab": "https://www.fab.com/listings/9b1f0b33-8888-4509-ade2-6194831f6a49",
+        "itch": "https://gameseedassets.itch.io/shooter-survival-asset"
+      }
+    },
+    {
+      "slug": "bull-rider",
+      "name": "Bull Rider",
+      "cat": "templates",
+      "price": "$50",
+      "blurb": "Complete bull-riding game template, with a playable demo on itch.io.",
+      "image": "assets/img/products/bull-key-700.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/templates/packs/bull-rider-full-game-template-354256",
+        "fab": "https://www.fab.com/listings/5b1af561-587b-4cfd-9d93-da7ef6091365",
+        "itch": "https://gameseedassets.itch.io/bull-rider"
+      },
+      "demo": "https://gameseedassets.itch.io/bull-rider-demo"
+    },
+    {
+      "slug": "chainsaw-cut",
+      "name": "Chainsaw Cut",
+      "cat": "templates",
+      "price": "Free",
+      "blurb": "Complete casual cutting game template. Free on the Unity Asset Store.",
+      "imageUrl": "https://assetstorev1-prd-cdn.unity3d.com/key-image/40f7b4cb-01a8-43b3-889e-73dff5e3b250.jpg",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/templates/packs/chainsaw-cut-game-template-369308",
+        "fab": "https://www.fab.com/listings/7d638343-f48f-4a92-863b-234386b28fac",
+        "itch": "https://gameseedassets.itch.io/chainsaw-cut"
+      }
+    },
+    {
+      "slug": "5-games-bundle",
+      "name": "5 Games Bundle",
+      "cat": "templates",
+      "price": "$200",
+      "blurb": "Five complete games (puzzle, casual, shooter and survival) in one bundle.",
+      "imageUrl": "https://assetstorev1-prd-cdn.unity3d.com/key-image/1c5fb88f-c218-4bad-9ed2-fb7e1e685f16.jpg",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/templates/packs/5-games-bundle-puzzle-casual-shooter-survival-393428"
+      }
+    },
+    {
+      "slug": "25d-game-template",
+      "name": "2.5D Game Template",
+      "cat": "templates",
+      "price": "$25",
+      "blurb": "3D environments with 2D sprite characters, for Unity and Unreal.",
+      "imageUrl": "https://img.itch.zone/aW1nLzI3MTQ5NDI5LnBuZw==/original/uFzcei.png",
+      "stores": {
+        "fab": "https://www.fab.com/listings/9925900a-384c-4253-90c6-5352907da82d",
+        "itch": "https://gameseedassets.itch.io/25d-game-template"
+      }
+    },
+    {
+      "slug": "dark-2d-world",
+      "name": "Dark 2D World",
+      "cat": "art",
+      "price": "Free",
+      "blurb": "Limbo-style silhouette environment: 100+ assets, parallax layers and a player controller.",
+      "image": "assets/img/products/dark-key-700.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/2d/environments/dark-2d-world-environment-pack-366952",
+        "fab": "https://www.fab.com/listings/7531ccde-cae4-4bd0-8ab7-5058cacaac56",
+        "itch": "https://gameseedassets.itch.io/limbo-like-environment"
+      },
+      "page": {
+        "h1": "Dark 2D World: Free Limbo-Style 2D Environment Pack for Unity",
+        "title": "Dark 2D World: Free Limbo-Style 2D Pack for Unity",
+        "description": "Free dark, atmospheric 2D environment pack for Unity: 100+ handcrafted silhouette assets, 3 parallax layers, ambient particles, a player controller, camera and post-processing.",
+        "hero": "assets/img/products/dark-key-1400.webp",
+        "video": "assets/video/dark.mp4",
+        "youtube": "xSDIh7K42eE",
+        "intro": [
+          "Dark 2D World is a complete kit for haunting, atmospheric 2D platformers in the style of Limbo. It includes silhouette trees, terrain and props, layered backgrounds and moody particles.",
+          "It is free on the Unity Asset Store. If you need more, the Extended Version adds a larger set of assets."
+        ],
+        "features": [
+          "100+ handcrafted assets",
+          "Background and foreground parallax (3 layers)",
+          "Vegetation and props: trees, bushes, spikes, crates and more",
+          "Ambient particles: dust and falling leaves",
+          "Player controller and camera system",
+          "Post-processing for a cinematic look",
+          "Runs on PC, WebGL and mobile"
+        ],
+        "specs": {
+          "Unity version": "Unity 6 (6000.0) or newer",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "PC, WebGL, mobile",
+          "Package version": "2.0.0",
+          "Download size": "5.6 MB"
+        },
+        "reviewAsset": "Dark 2D World",
+        "related": [
+          "dark-2d-world-extended"
+        ]
+      }
+    },
+    {
+      "slug": "cute-environment-pack",
+      "name": "Cute Environment Pack",
+      "cat": "art",
+      "price": "$10",
+      "blurb": "100+ handcrafted sprites: trees, rocks, plants, ruins and props.",
+      "imageUrl": "https://img.itch.zone/aW1nLzI0MTkzMTY1LnBuZw==/original/M4u7kf.png",
+      "stores": {
+        "itch": "https://gameseedassets.itch.io/cute-environment-pack"
+      }
+    },
+    {
+      "slug": "cute-environment-pack-2",
+      "name": "Cute Environment Pack 2",
+      "cat": "art",
+      "price": "$5",
+      "blurb": "Dark-toned cartoon set with vegetation, props and animated fire.",
+      "imageUrl": "https://img.itch.zone/aW1nLzI0MjA4OTQ0LnBuZw==/original/EKhL1u.png",
+      "stores": {
+        "itch": "https://gameseedassets.itch.io/cute-environment-pack-2"
+      }
+    },
+    {
+      "slug": "cartoon-trees-pack",
+      "name": "Cartoon Trees Pack",
+      "cat": "art",
+      "price": "$1",
+      "blurb": "Handcrafted trees, bamboo and bushes for 2D environments.",
+      "imageUrl": "https://img.itch.zone/aW1nLzI0ODQ2Mjk4LnBuZw==/original/u6clB7.png",
+      "stores": {
+        "itch": "https://gameseedassets.itch.io/cartoon-trees-pack"
+      }
+    },
+    {
+      "slug": "low-poly-fire-particles",
+      "name": "Low Poly Fire Particles",
+      "cat": "vfx",
+      "price": "Free",
+      "blurb": "Stylised campfire and bonfire VFX in five colours. Featured by Code Monkey.",
+      "image": "assets/img/posters/fire-1280.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/vfx/particles/fire-explosions/vfx-low-poly-fire-particles-372598",
+        "fab": "https://www.fab.com/listings/f72a4bc1-7ac9-48c2-89be-58d5a8eded31"
+      },
+      "page": {
+        "h1": "Low Poly Fire Particles: Free Unity Campfire VFX",
+        "title": "Free Low Poly Fire Particles for Unity",
+        "description": "Free low poly fire VFX for Unity: stylised campfire and bonfire particle effects in 5 colour variants. Lightweight, drag-and-drop, Built-in and URP, Unity 6 ready. Featured by Code Monkey.",
+        "hero": "assets/img/posters/fire-1280.webp",
+        "video": "assets/video/fire.mp4",
+        "intro": [
+          "A lightweight pack of stylised low poly fire effects for Unity, made for campfires, bonfires and torches in casual, mobile and low poly games.",
+          "Code Monkey featured it on YouTube and said he loved how cute it is."
+        ],
+        "features": [
+          "5 fire colour variants",
+          "Highly optimised particle effects",
+          "Made with Unity's built-in Particle System",
+          "Drag-and-drop prefabs, easy to modify",
+          "Looks great with post-processing"
+        ],
+        "specs": {
+          "Unity version": "Unity 6.0, 6.3 and 6.4",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "PC, WebGL, mobile",
+          "Package version": "1.0.0",
+          "Download size": "431 KB"
+        },
+        "reviewAsset": "Low Poly Fire Particles",
+        "codeMonkey": true,
+        "related": [
+          "fog-particles",
+          "rain-particles"
+        ]
+      }
+    },
+    {
+      "slug": "fog-particles",
+      "name": "Fog Particles",
+      "cat": "vfx",
+      "price": "Free",
+      "blurb": "Drop-in atmospheric fog and clouds for 2D and 3D games.",
+      "image": "assets/img/products/fog-700.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/vfx/particles/fog-particles-351840",
+        "fab": "https://www.fab.com/listings/dea59576-45a7-4a02-a1e1-4b0947265a19"
+      },
+      "page": {
+        "h1": "Fog Particles: Free Unity Fog & Cloud VFX",
+        "title": "Free Fog Particles for Unity: Fog & Cloud VFX",
+        "description": "Free, lightweight fog particle system for Unity. Drag-and-drop prefabs for atmospheric fog or clouds in 2D and 3D games, optimised for mobile, WebGL and PC. Built-in and URP.",
+        "hero": "assets/img/products/fog-1400.webp",
+        "intro": [
+          "Soft, lightweight fog for Unity that you can use as ground fog, mist or clouds. Drag a prefab into your scene and it works straight away.",
+          "Density, speed and size are easy to adjust, and it is light enough to use on mobile and WebGL."
+        ],
+        "features": [
+          "Soft, lightweight fog particles",
+          "Use it as fog or as clouds",
+          "Made with Unity's built-in Particle System",
+          "Works in 2D and 3D games",
+          "Optimised for mobile, web and PC",
+          "Drag-and-drop prefabs",
+          "Simple controls for density, speed and size"
+        ],
+        "specs": {
+          "Unity version": "Unity 6 (6000.0) or newer",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "PC, WebGL, mobile",
+          "Package version": "1.0.0",
+          "Download size": "7.0 MB"
+        },
+        "reviewAsset": "Fog Particles",
+        "related": [
+          "rain-particles",
+          "low-poly-fire-particles"
+        ]
+      }
+    },
+    {
+      "slug": "rain-particles",
+      "name": "Rain Particles",
+      "cat": "vfx",
+      "price": "Free",
+      "blurb": "Performant rain with splashes and ripples, plus bonus snow.",
+      "image": "assets/img/products/rain-700.webp",
+      "stores": {
+        "unity": "https://assetstore.unity.com/packages/vfx/particles/rain-particles-351846",
+        "fab": "https://www.fab.com/listings/251073de-fcf3-4e01-80a9-da3194cec56f"
+      },
+      "page": {
+        "h1": "Rain Particles: Free Unity Rain VFX with Splashes",
+        "title": "Free Rain Particles for Unity: Rain & Splash VFX",
+        "description": "Free, performance-friendly rain particle system for Unity with rain streaks, ground splashes and ripples, plus bonus snow. Drag-and-drop prefabs for 2D and 3D, Built-in and URP.",
+        "hero": "assets/img/products/rain-1400.webp",
+        "intro": [
+          "Realistic, performance-friendly rain for Unity, with streaks, ground splashes and ripples. It suits open worlds, horror games and mobile projects.",
+          "It also includes a bonus snow effect."
+        ],
+        "features": [
+          "Realistic rain streak particles",
+          "Ground splash and ripple effects",
+          "Bonus snow particles",
+          "Works in 2D and 3D games",
+          "Optimised for mobile, web and PC",
+          "Drag-and-drop prefabs"
+        ],
+        "specs": {
+          "Unity version": "Unity 6 (6000.0) or newer",
+          "Render pipelines": "Built-in, URP",
+          "Platforms": "PC, WebGL, mobile",
+          "Package version": "1.0.0",
+          "Download size": "544 KB"
+        },
+        "reviewAsset": "Rain Particles",
+        "related": [
+          "fog-particles",
+          "low-poly-fire-particles"
+        ]
+      }
+    },
+    {
+      "slug": "toon-vfx-pack",
+      "name": "Toon VFX Pack",
+      "cat": "vfx",
+      "price": "Free",
+      "blurb": "Free cartoon-style particle effects on Fab.",
+      "imageUrl": "https://media.fab.com/image_previews/gallery_images/b801d20a-c833-4df2-8b8f-2524136a2481/7d4bde5b-2fc4-40e1-9129-e70f8f7e73ed.jpg",
+      "stores": {
+        "fab": "https://www.fab.com/listings/e9ef0d68-02a1-4954-b6c3-d05c931c19bc"
+      }
+    },
+    {
+      "slug": "magical-potions-effects-pack",
+      "name": "Magical Potions & Effects",
+      "cat": "vfx",
+      "price": "$10",
+      "blurb": "Potions and magic effects to add some sparkle to your game.",
+      "stores": {
+        "itch": "https://gameseedassets.itch.io/magical-potions-effects-pack"
+      }
+    },
+    {
+      "slug": "isometric-buildings",
+      "name": "Isometric Buildings",
+      "cat": "models",
+      "price": "Free",
+      "blurb": "Free isometric 3D buildings on Fab.",
+      "imageUrl": "https://media.fab.com/image_previews/gallery_images/e6513aee-a2b4-4c28-aed3-39bc1596de96/f2d573f9-8adb-44e5-bf5d-bbd65268d1ad.jpg",
+      "stores": {
+        "fab": "https://www.fab.com/listings/ed41efcb-2808-4d35-a75a-31f508e91095"
+      }
+    },
+    {
+      "slug": "voxel-guns-3d",
+      "name": "Voxel Guns 3D",
+      "cat": "models",
+      "price": "$1",
+      "blurb": "Voxel-style 3D gun models.",
+      "imageUrl": "https://img.itch.zone/aW1nLzE3NjU4NTkwLnBuZw==/original/Ae3%2FK1.png",
+      "stores": {
+        "itch": "https://gameseedassets.itch.io/pixel-guns-3d"
+      }
+    },
+    {
+      "slug": "stylized-axe-3d",
+      "name": "Stylized Axe 3D",
+      "cat": "models",
+      "price": "$1",
+      "blurb": "Stylised 3D axe models.",
+      "imageUrl": "https://img.itch.zone/aW1nLzE3NjU4MzM2LnBuZw==/original/0tIrys.png",
+      "stores": {
+        "itch": "https://gameseedassets.itch.io/stylized-axe-3d"
+      }
+    },
+    {
+      "slug": "25d-engine",
+      "name": "2.5D Engine",
+      "cat": "tools",
+      "price": "$30",
+      "blurb": "2.5D worlds with proper depth, sorting and camera handling.",
+      "image": "assets/img/products/engine25d-700.webp",
+      "stores": {
+        "fab": "https://www.fab.com/listings/eecac493-ce51-4058-bcdc-904e01ac50dc",
+        "itch": "https://gameseedassets.itch.io/25d-engine"
+      }
+    },
+    {
+      "slug": "pixel-keyboard",
+      "name": "Pixel Keyboard",
+      "cat": "tools",
+      "price": "$3",
+      "blurb": "Pixel-art keyboard UI with sound effects.",
+      "imageUrl": "https://img.itch.zone/aW1nLzE4NjcxMDgxLnBuZw==/original/iR98pH.png",
+      "stores": {
+        "itch": "https://gameseedassets.itch.io/pixel-keyboard"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "asset": "Stickman Shooter",
+      "stars": 5,
+      "title": "Addictive physics",
+      "text": "The way things fly and bounce with real physics is the best part for me. Every shot feels powerful and different. This template helps me a lot with my game ideas."
+    },
+    {
+      "asset": "Arrow Escape",
+      "stars": 5,
+      "title": "Super template",
+      "text": "I spent a long time looking for a game like this. I'm a beginner with Unity and the price made me hesitate, but so far I have no regrets. It installed on the latest Unity without any issues."
+    },
+    {
+      "asset": "Rain Particles",
+      "stars": 5,
+      "title": "Brilliant asset — works out of the box",
+      "text": "I was struggling for over three days building a rain particle system with ripples and splashes. This asset just works out of the box in HDRP in Unity 6.4."
+    },
+    {
+      "asset": "Rope Puzzle",
+      "stars": 5,
+      "title": "Excellent support and solid template",
+      "text": "I had some technical issues after downloading, but the author responded very quickly and helped me fix everything. Well-structured and easy to work with."
+    },
+    {
+      "asset": "Dark 2D World",
+      "stars": 5,
+      "title": "Finally found something like Limbo",
+      "text": "I've been searching for that same eerie, atmospheric vibe as Limbo, and this is the closest match I've come across so far — really appreciate it!"
+    },
+    {
+      "asset": "Fog Particles",
+      "stars": 5,
+      "title": "Amazingly simple",
+      "text": "I literally just dragged the prefab into the scene and everything worked instantly. No tedious tweaking required; the results are immediate."
+    },
+    {
+      "asset": "Arrow Escape",
+      "stars": 5,
+      "title": "Premium content at a cheap price",
+      "text": "I used to wonder why arrow escape templates are so expensive for such simple gameplay. You released this at such an affordable price, with all the features. Thanks a lot!"
+    },
+    {
+      "asset": "Stickman Shooter",
+      "stars": 5,
+      "title": "Great starter template",
+      "text": "Great asset! It's very clean, well organized, and easy to understand. It helped me a lot to get my game started and saved me a lot of development time."
+    },
+    {
+      "asset": "Stickman Shooter",
+      "stars": 5,
+      "title": "Exactly what I was looking for",
+      "text": "Perfect template for me. I built on top of it and got a good project for my portfolio. Thanks a lot to the developer for quick support."
+    },
+    {
+      "asset": "Dark 2D World",
+      "stars": 5,
+      "title": "Nice",
+      "text": "A very beautiful asset stylized for a 2D platformer or other game type. Great for creating a dark, unusual atmosphere in a game."
+    },
+    {
+      "asset": "Fog Particles",
+      "stars": 5,
+      "title": "Me like!",
+      "text": "It looks beautiful, the setup doesn't seem complicated, and the documentation and Discord server are very pleasing!"
+    },
+    {
+      "asset": "Rain Particles",
+      "stars": 5,
+      "title": "Works and looks good!",
+      "text": "It's nice to have a prefab that I can adjust and then throw on a 2D background or outside a window."
+    },
+    {
+      "asset": "Rain Particles",
+      "stars": 5,
+      "title": "Good!!",
+      "text": "It is really good and nice asset. I use it in my commercial game, and it looks so great :)"
+    },
+    {
+      "asset": "Fog Particles",
+      "stars": 5,
+      "title": "Great asset, simple and performant",
+      "text": "Looks great, very easy to use, simple prefabs, particle system fog. Highly performant."
+    },
+    {
+      "asset": "Fog Particles",
+      "stars": 5,
+      "title": "Works with older versions!",
+      "text": "This is really really really good! I'm working with Unity 2021.3 and it still works!"
+    },
+    {
+      "asset": "Stickman Shooter",
+      "stars": 5,
+      "title": "Amazing asset",
+      "text": "For my web games website — also very quick support by the publisher!"
+    },
+    {
+      "asset": "Rain Particles",
+      "stars": 5,
+      "title": "Big surprise",
+      "text": "Really good rain effect. Exactly what I wanted for my project."
+    },
+    {
+      "asset": "Dark 2D World",
+      "stars": 5,
+      "title": "Worth it!",
+      "text": "Really satisfied with this asset — gives a Limbo-like feel!"
+    },
+    {
+      "asset": "Fog Particles",
+      "stars": 5,
+      "title": "Neat fog asset",
+      "text": "Very useful and flexible fog particles tool. Thank you!"
+    },
+    {
+      "asset": "Low Poly Fire Particles",
+      "stars": 5,
+      "title": "Very quick to set up — thanks!",
+      "text": "Perfect for my small low poly world — thanks a bunch!"
+    },
+    {
+      "asset": "Rain Particles",
+      "stars": 5,
+      "title": "The best asset!!",
+      "text": "프리팹만 끌어다 놓으면 바로 적용 가능합니다. 가볍고 퀄리티도 굉장히 좋습니다. 추천합니다!!"
+    },
+    {
+      "asset": "Rain Particles",
+      "stars": 5,
+      "title": "Nice rain effect",
+      "text": "Nice rain effect with drops, I really liked it."
+    },
+    {
+      "asset": "Arrow Escape",
+      "stars": 5,
+      "title": "Works just great!",
+      "text": "Amazing! Works as intended and easy to set up."
+    },
+    {
+      "asset": "Fog Particles",
+      "stars": 5,
+      "title": "Excellent!",
+      "text": "Nicely done, thank you very much!"
+    },
+    {
+      "asset": "Arrow Escape",
+      "stars": 5,
+      "title": "Well made! Very useful editor tools",
+      "text": "Thanks a lot for this asset!"
+    },
+    {
+      "asset": "Low Poly Fire Particles",
+      "stars": 5,
+      "title": "Easy to use",
+      "text": "Very cool, thank you!"
+    },
+    {
+      "asset": "Fog Particles",
+      "stars": 5,
+      "title": "Awesome",
+      "text": "Lightweight."
+    },
+    {
+      "asset": "Rain Particles",
+      "stars": 5,
+      "title": "Surprisingly great",
+      "text": "Awesome."
+    },
+    {
+      "asset": "Dark 2D World",
+      "stars": 4,
+      "title": "Thanks for this pack!",
+      "text": "Really helpful for creating a quick prototype, but please update the sprite sizes."
+    },
+    {
+      "asset": "Rain Particles",
+      "stars": 4,
+      "title": "Good asset",
+      "text": "Fantastic asset 💯"
+    }
+  ]
+}

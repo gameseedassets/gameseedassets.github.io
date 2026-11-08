@@ -4,30 +4,24 @@
 
    ── REVIEWS ───────────────────────────────────────────────
    The first six float around the counter; everything after
-   that scrolls in the strip underneath. Add an entry and it
-   appears — { asset, title, text, stars, name? }.
+   that scrolls in the strip underneath. Edit them in
+   tools/products.json and run `python tools/build.py`.
    ============================================================ */
-var REVIEWS = [
-  { asset: 'Stickman Shooter', stars: 5, title: 'Great starter template', text: "Great asset! It's very clean, well organized, and easy to understand. It helped me a lot to get my game started and saved me a lot of development time." },
-  { asset: 'Rain Particles', stars: 5, title: 'Brilliant asset — works out of the box', text: 'I was struggling for over three days building a rain particle system with ripples and splashes. This asset just works out of the box in HDRP in Unity 6.4.' },
-  { asset: 'Rope Puzzle', stars: 5, title: 'Excellent support and solid template', text: 'I had some technical issues after downloading, but the author responded very quickly and helped me fix everything. Well-structured and easy to work with.' },
-  { asset: 'Dark 2D World', stars: 5, title: 'Finally found something like Limbo', text: "I've been searching for that same eerie, atmospheric vibe as Limbo, and this is the closest match I've come across so far — really appreciate it!" },
-  { asset: 'Fog Particles', stars: 5, title: 'Amazingly simple', text: 'I literally just dragged the prefab into the scene and everything worked instantly. No tedious tweaking required; the results are immediate.' },
-  { asset: 'Low Poly Fire Particles', stars: 5, title: 'Very quick to set up — thanks!', text: 'Perfect for my small low poly world — thanks a bunch!' },
-
-  { asset: 'Stickman Shooter', stars: 5, title: 'Exactly what I was looking for', text: 'Perfect template for me. I built on top of it and got a good project for my portfolio. Thanks a lot to the developer for quick support.' },
-  { asset: 'Stickman Shooter', stars: 5, title: 'Addictive physics', text: 'The way things fly and bounce with real physics is the best part for me. Every shot feels powerful and different. This template helps me a lot with my game ideas.' },
-  { asset: 'Rain Particles', stars: 5, title: 'Big surprise', text: 'Really good rain effect. Exactly what I wanted for my project.' },
-  { asset: 'Rain Particles', stars: 5, title: 'Good!!', text: 'It is really good and nice asset. I use it in my commercial game, and it looks so great :)' },
-  { asset: 'Fog Particles', stars: 5, title: 'Great asset, simple and performant', text: 'Looks great, very easy to use, simple prefabs, particle system fog. Highly performant.' },
-  { asset: 'Fog Particles', stars: 4, title: 'Works with older versions!', text: "This is really really really good! I'm working with Unity 2021.3 and it still works!" },
-  { asset: 'Dark 2D World', stars: 5, title: 'Worth it!', text: 'Really satisfied with this asset — gives a Limbo-like feel!' },
-  { asset: 'Dark 2D World', stars: 5, title: 'Nice', text: 'A very beautiful asset stylized for a 2D platformer or other game type. Great for creating a dark, unusual atmosphere in a game.' },
-  { asset: 'Rain Particles', stars: 5, title: 'Works and looks good!', text: "It's nice to have a prefab that I can adjust and then throw on a 2D background or outside a window." },
-  { asset: 'Stickman Shooter', stars: 5, title: 'Amazing asset', text: 'For my web games website — also very quick support by the publisher!' },
-  { asset: 'Fog Particles', stars: 5, title: 'Neat fog asset', text: 'Very useful and flexible fog particles tool. Thank you!' },
-  { asset: 'Fog Particles', stars: 5, title: 'Excellent!', text: 'Nicely done, thank you very much!' }
-];
+/* Reviews live in the page itself (#review-data, generated from
+   tools/products.json) so search engines and AI crawlers can read them.
+   This script turns that list into the floating bubbles + strip. */
+function readReviews() {
+  var list = document.getElementById('review-data');
+  if (!list) return [];
+  return Array.prototype.map.call(list.querySelectorAll('.rv'), function (li) {
+    return {
+      asset: li.getAttribute('data-asset') || '',
+      stars: parseInt(li.getAttribute('data-stars'), 10) || 5,
+      title: (li.querySelector('h3') || {}).textContent || '',
+      text: (li.querySelector('p') || {}).textContent || ''
+    };
+  });
+}
 
 (function () {
   'use strict';
@@ -130,7 +124,7 @@ var REVIEWS = [
     if (!cv || reduce || saveData) { if (cv) cv.remove(); return; }
 
     var ctx = cv.getContext('2d', { alpha: true });
-    var dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    var dpr = 1;   // soft sprites: no need for retina-resolution redraws
     var COLORS = ['#6ecf35', '#4aaa3a', '#2d7a4f', '#d4b44a', '#a8e85a', '#3d9e45'];
     var TYPES = ['seed', 'leaf', 'dot', 'petal'];
     var sprites = {};
@@ -183,7 +177,7 @@ var REVIEWS = [
       W = window.innerWidth; H = window.innerHeight;
       cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
       cv.style.width = W + 'px'; cv.style.height = H + 'px';
-      var target = Math.max(14, Math.min(42, Math.round((W * H) / 30000)));
+      var target = Math.max(12, Math.min(30, Math.round((W * H) / 40000)));
       while (pts.length > target) pts.pop();
       while (pts.length < target) pts.push(make(true));
     }
@@ -333,6 +327,18 @@ var REVIEWS = [
       index = Math.max(0, Math.min(slides.length - 1, i));
       layout();
     }
+
+    // slides are absolutely positioned, so size the stage to the tallest one:
+    // no clipped buttons and no dead space before the next section
+    function fit() {
+      var h = 0;
+      slides.forEach(function (s) { h = Math.max(h, s.offsetHeight); });
+      if (h) box.style.height = Math.ceil(h + 12) + 'px';
+    }
+    fit();
+    var ft;
+    window.addEventListener('resize', function () { clearTimeout(ft); ft = setTimeout(fit, 150); });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
     document.getElementById('cprev').addEventListener('click', function () { go(index - 1); });
     document.getElementById('cnext').addEventListener('click', function () { go(index + 1); });
 
@@ -437,24 +443,16 @@ var REVIEWS = [
     }
   })();
 
-  /* ── tapping the strip holds it still for a moment ───── */
-  (function holdStrip() {
-    var m = document.getElementById('more-reviews');
-    if (!m) return;
-    var t;
-    m.addEventListener('pointerdown', function () {
-      m.classList.add('hold');
-      clearTimeout(t);
-      t = setTimeout(function () { m.classList.remove('hold'); }, 2500);
-    }, { passive: true });
-  })();
-
   /* ── review wall: 6 float, the rest scroll ───────────── */
   (function reviewWall() {
     var wrap = document.getElementById('bubbles');
     var track = document.getElementById('rtrack');
     var trust = document.getElementById('trust');
+    var REVIEWS = readReviews();
     if (!wrap || !REVIEWS.length) return;
+    // the source list stays in the page for crawlers + screen readers, visually hidden
+    var src = document.getElementById('review-data');
+    if (src) src.classList.add('sr-only');
 
     var W = 'clamp(238px, 22vw, 318px)';
     var SLOTS = [
@@ -471,15 +469,15 @@ var REVIEWS = [
     function card(r, rot) {
       var c = document.createElement('button');
       c.type = 'button';
+      c.tabIndex = -1;
       c.className = 'bcard';
       c.style.setProperty('--rot', rot || '0deg');
-      c.innerHTML = '<span class="bmeta"><span></span><span class="stars"></span></span><h3></h3><p></p><span class="bsrc"></span>';
+      c.innerHTML = '<span class="bmeta"><span></span><span class="stars"></span></span><b class="bt"></b><p></p><span class="bsrc"></span>';
       c.querySelector('.bmeta span').textContent = r.name || r.asset || '';
       c.querySelector('.stars').textContent = stars(r.stars || 5);
-      c.querySelector('h3').textContent = r.title;
+      c.querySelector('.bt').textContent = r.title;
       c.querySelector('p').textContent = r.text;
       c.querySelector('.bsrc').textContent = r.asset ? r.asset + ' · Unity Asset Store' : 'Unity Asset Store';
-      c.setAttribute('aria-label', 'Review: ' + r.title);
       return c;
     }
 
@@ -521,28 +519,99 @@ var REVIEWS = [
               track.appendChild(cell);
             });
           }
-          // ~7s of travel per card keeps the pace calm on any screen
-          track.style.setProperty('--dur', Math.max(40, rest.length * 7) + 's');
         }
       }
+      strip.measure();
     }
+
+    /* the strip: always drifting right-to-left; grab it (mouse, finger or
+       trackpad) to look around, let go and it carries on drifting */
+    var strip = (function () {
+      var box = document.getElementById('more-reviews');
+      if (!box || !track) return { measure: function () {} };
+      var SPEED = 32;                 // px per second of auto drift
+      var x = 0, half = 1, v = 0, last = 0, raf = 0, visible = true;
+      var down = false, moved = false, sx = 0, sTx = 0, lastX = 0, lastT = 0;
+
+      function wrap() {
+        if (x <= -half) x += half;
+        if (x > 0) x -= half;
+      }
+      function paint() { track.style.transform = 'translate3d(' + x.toFixed(2) + 'px,0,0)'; }
+      function tick(ts) {
+        raf = requestAnimationFrame(tick);
+        var dt = last ? Math.min((ts - last) / 1000, 0.05) : 0;
+        last = ts;
+        if (down || !visible) return;
+        if (Math.abs(v) > 4) { x += v * dt; v *= Math.pow(0.04, dt); }   // flick momentum
+        else { v = 0; if (!reduce) x -= SPEED * dt; }
+        wrap(); paint();
+      }
+      function start() { if (!raf) { last = 0; raf = requestAnimationFrame(tick); } }
+      function stop() { cancelAnimationFrame(raf); raf = 0; }
+
+      box.addEventListener('pointerdown', function (e) {
+        if (e.pointerType === 'mouse' && e.button !== 0) return;
+        down = true; moved = false; v = 0;
+        sx = lastX = e.clientX; sTx = x; lastT = performance.now();
+        box.classList.add('dragging');
+      });
+      window.addEventListener('pointermove', function (e) {
+        if (!down) return;
+        var dx = e.clientX - sx;
+        if (!moved && Math.abs(dx) > 6) { moved = true; try { box.setPointerCapture(e.pointerId); } catch (_) {} }
+        if (!moved) return;
+        var now = performance.now();
+        v = (e.clientX - lastX) / Math.max((now - lastT) / 1000, 0.008);
+        lastX = e.clientX; lastT = now;
+        x = sTx + dx; wrap(); paint();
+      }, { passive: true });
+      function release() {
+        if (!down) return;
+        down = false;
+        box.classList.remove('dragging');
+        v = Math.max(-2400, Math.min(2400, v));
+        if (performance.now() - lastT > 90) v = 0;   // held still before letting go
+      }
+      window.addEventListener('pointerup', release);
+      window.addEventListener('pointercancel', release);
+      // a drag shouldn't count as a click on the card underneath
+      box.addEventListener('click', function (e) { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+      // sideways trackpad / shift+wheel scrolling
+      box.addEventListener('wheel', function (e) {
+        var d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : (e.shiftKey ? e.deltaY : 0);
+        if (!d) return;
+        e.preventDefault();
+        v = 0; x -= d; wrap(); paint();
+      }, { passive: false });
+
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (en) { visible = en[0].isIntersecting; }, { rootMargin: '100px 0px' }).observe(box);
+      }
+      document.addEventListener('visibilitychange', function () { document.hidden ? stop() : start(); });
+      start();
+      return { measure: function () {
+        var cells = track.children, n = cells.length / 2;
+        half = n >= 1 ? Math.max(1, cells[n].offsetLeft - cells[0].offsetLeft) : 1;
+        wrap(); paint();
+      } };
+    })();
 
     build();
     var t;
     window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(build, 200); });
   })();
 
-  /* ── counter: 0 → 15,000 ─────────────────────────────── */
+  /* ── counter: 0 → data-target ──────────────────────── */
   var counter = document.getElementById('trust-count');
   if (counter && 'IntersectionObserver' in window) {
-    var target = 15000;
-    if (reduce) {
-      counter.textContent = target.toLocaleString('en-US');
-    } else {
-      counter.textContent = '0';
+    var target = parseInt(counter.getAttribute('data-target'), 10) || 15000;
+    if (!reduce) {
+      // the real number stays in the HTML (crawlers read it); count up only once seen
       var cio = new IntersectionObserver(function (e) {
         if (!e[0].isIntersecting) return;
         cio.disconnect();
+        counter.textContent = '0';
         var t0 = 0, dur = 1900;
         (function tick(ts) {
           if (!t0) t0 = ts;
@@ -555,35 +624,62 @@ var REVIEWS = [
     }
   }
 
-  /* ── squishy clicks everywhere + cursor ripple ───────── */
-  (function tactile() {
-    if (reduce) return;
-    var SEL = 'a, button, .btn, .cap, .slide-media, .bcard, .free-chip, .stores a, .nav-links a, .cnav, .cdots button, .link-arrow, .hero-store-row a, .final-stores a, .footer-links a';
+  /* ── collection: category filter + show more ─────────── */
+  (function collection() {
+    var grid = document.getElementById('caps');
+    if (!grid) return;
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.cap'));
+    var chips = document.querySelectorAll('.cfilter .cf');
+    var LIMIT = 8;
+    var filter = 'all';
+    var expanded = false;
 
-    document.addEventListener('pointerdown', function (e) {
-      var el = e.target.closest ? e.target.closest(SEL) : null;
-      if (el && !el.classList.contains('bcard')) {   // review cards have their own squash
-        el.classList.remove('squish');
-        void el.offsetWidth;
-        el.classList.add('squish');
-        var clear = function () { el.classList.remove('squish'); el.removeEventListener('animationend', clear); };
-        el.addEventListener('animationend', clear);
-      }
-      if (!el) pop(e.clientX, e.clientY);
-    }, { passive: true });
+    var more = document.createElement('button');
+    more.type = 'button';
+    more.className = 'btn btn-ghost cmore';
+    grid.after(more);
 
-    var busy = false;
-    function pop(x, y) {
-      if (busy) return;              // one ripple at a time keeps this free
-      busy = true;
-      var r = document.createElement('span');
-      r.className = 'ripple';
-      r.style.setProperty('--rx', x + 'px');
-      r.style.setProperty('--ry', y + 'px');
-      document.body.appendChild(r);
-      setTimeout(function () { r.remove(); busy = false; }, 520);
+    function apply() {
+      var shown = 0, total = 0;
+      cards.forEach(function (c) {
+        var match = filter === 'all' || c.getAttribute('data-cat') === filter;
+        if (match) total++;
+        var visible = match && (expanded || filter !== 'all' || shown < LIMIT);
+        if (visible) shown++;
+        c.hidden = !visible;
+        if (visible) c.classList.add('in');
+      });
+      more.hidden = filter !== 'all' || total <= LIMIT;
+      more.textContent = expanded ? 'Show fewer' : 'Show all ' + total + ' assets';
+      chips.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-f') === filter)); });
     }
+
+    chips.forEach(function (b) {
+      b.addEventListener('click', function () { filter = b.getAttribute('data-f'); apply(); });
+    });
+    more.addEventListener('click', function () {
+      expanded = !expanded;
+      apply();
+      if (!expanded) document.getElementById('collection').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+    });
+    apply();
   })();
+
+  /* ── YouTube: load the iframe only when clicked ──────── */
+  document.querySelectorAll('.yt[data-id]').forEach(function (box) {
+    var btn = box.querySelector('.play');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(box.getAttribute('data-id')) + '?autoplay=1&rel=0';
+      f.title = box.getAttribute('data-title') || 'YouTube video';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      f.allowFullscreen = true;
+      box.textContent = '';
+      box.appendChild(f);
+      box.classList.add('playing');
+    });
+  });
 
   /* ── active nav link ─────────────────────────────────── */
   var links = document.querySelectorAll('.nav-links a[href^="#"]');

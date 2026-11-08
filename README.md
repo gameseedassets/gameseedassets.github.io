@@ -3,7 +3,31 @@
 Static site. Drop these files at the repo root and GitHub Pages serves them as-is.
 
 ## Page order
-hero → spotlight carousel → capsule collection → Code Monkey → reviews → work for hire + support → final CTA
+hero → featured carousel → Code Monkey → work for hire + support → collection → reviews → about → final CTA
+
+## Catalogue, reviews and asset pages (`tools/`)
+The collection grid, the review list, the homepage JSON-LD, the asset landing pages
+(`/archer-kit/`, `/rope-puzzle/` …) and `sitemap.xml` are all generated from **`tools/products.json`**.
+
+```
+python -m pip install pillow      # once
+python tools/build.py             # after every edit to products.json
+```
+
+- **Add a product:** add an entry to `products` (slug, name, cat, price, blurb, stores, and `image`
+  for a local file or `imageUrl` for a store image; the build saves a WebP thumbnail to
+  `assets/img/catalog/`).
+- **Not live yet?** Set `"soon": true` and leave the Unity link out of `stores`: the page and card show
+  "Unity · coming soon" and a Discord button. When the listing goes live, add the `unity` link, remove
+  `soon`, set the real `price`, rebuild, and swap the "soon" button in the featured carousel
+  (`index.html`) for a real link. Grass Cutting Simulator and Paper Plane Controller (Unity) use this now.
+- **Give it its own page:** add a `page` block (copy one from an existing product). Then it gets
+  `/<slug>/`, an entry in the sitemap and a "Details →" link on its card.
+- **Add a review:** add it to `reviews`. The first six float around the counter; the rest scroll.
+  Reviews are written into the HTML so search engines and AI tools can read them.
+- Only edit `index.html` **outside** the `<!-- BUILD:x -->` markers; the build overwrites what's inside them.
+- After deploying, submit `https://gameseedassets.store/sitemap.xml` in Google Search Console and
+  Bing Webmaster Tools.
 
 ## Where things live
 - `index.html` — all page content.
@@ -14,27 +38,14 @@ hero → spotlight carousel → capsule collection → Code Monkey → reviews �
 - `assets/img/products/*.webp` — store artwork.
 
 ## Common edits
-- **Fab links:** every asset card has a Fab Marketplace button pointing at the seller page for now —
-  search `FAB:` in `index.html` and paste each asset's own Fab product URL. Delete the button for
-  any asset that isn't on Fab.
 - **Click feel (one system):** `assets/main.js` → `squash()` + `burst()`. Every element matching `SEL`
   in the `tactile()` block squashes and pops particles; a click on empty space fires the cursor ripple.
-- **Add a review:** open `assets/main.js` and add one line to the `REVIEWS` list at the top
-  (`{ asset, title, text, stars }`). The first six float around the 15,000+ counter; every review
-  after that goes into the scrolling strip underneath.
 - **Atmosphere particles:** `assets/main.js` → the `atmosphere()` block. Sprites are drawn once and
   re-used, the loop is capped at 30fps, the count scales with screen size, and it stops when the tab
   is hidden or the visitor prefers reduced motion. Change `COLORS`, `TYPES` or the count formula there.
 - **Click feel:** `assets/main.js` → the `tactile()` block. `SEL` lists which elements squish on
   press; clicks on empty space fire the cursor ripple instead (one at a time, removed after 0.5s).
-- **Add a capsule card:** copy one `<a class="shot">` block in the
-  collection section and put the capsule in `assets/img/products/`
-  (export at 1400px and 700px wide, WebP, quality ~86).
 - **Booking link:** search `calendly.com` in `index.html`.
-- **itch.io capsules:** the four itch products (2.5D Game Template, Cute Environment Pack 1 & 2,
-  Cartoon Trees) load their cover art straight from `img.itch.zone`. If itch ever blocks that,
-  save each cover into `assets/img/products/` and point the `src` at the local file — the cards
-  already fall back to a green tile if an image fails.
 - **Add an asset to the carousel:** copy one `<article class="slide">` block; the dots and arrows adjust automatically.
   Add `data-loop="assets/video/<name>-loop.mp4"` on `.slide-media` to give it a moving preview.
 - **Swap a video:** replace the file in `assets/video/` keeping the same name, and update its poster in `assets/img/posters/`.
@@ -56,5 +67,7 @@ ffmpeg -ss 10 -i source.mp4 -frames:v 1 -vf "scale=1280:-2" poster.png
 ## Notes
 - The display font (IntegralCF) only has real letter glyphs, so CSS restricts it to A–Z; digits and
   punctuation come from DM Sans on purpose.
-- Prices, ratings and links were taken from the Unity Asset Store listings — update them in
-  `index.html` when a listing changes.
+- Prices and links were taken from the Unity Asset Store, Fab and itch.io listings. Update them in
+  `tools/products.json` (and the carousel in `index.html`) when a listing changes.
+- The 15,000+ counter number is `data-target` on `#trust-count` in `index.html`; keep the text inside
+  it the same number so crawlers see the real figure.
