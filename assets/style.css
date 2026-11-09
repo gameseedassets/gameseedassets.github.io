@@ -719,3 +719,45 @@ h1, h2, h3, .hero-title, .tagline, .cm-quote { font-family: var(--display); font
 
 /* ── v11: carousel clips sideways only, so button glows show in full ── */
 .carousel { overflow: hidden; overflow: clip visible; padding-bottom: 0; }
+
+/* ── v12: Code Monkey card — all Baloo 2, plus a shine ── */
+.cm-note, .cm-note * { font-family: var(--display); }
+.cm-note {
+  position: relative; overflow: hidden; isolation: isolate;
+  border-color: var(--line-g);
+  background:
+    radial-gradient(120% 90% at 0% 0%, rgba(110, 207, 53, 0.09), transparent 55%),
+    radial-gradient(90% 80% at 100% 100%, rgba(110, 207, 53, 0.08), transparent 60%),
+    var(--surface);
+  box-shadow: 0 0 0 1px rgba(110, 207, 53, 0.05), 0 22px 60px -30px rgba(110, 207, 53, 0.35);
+}
+/* a soft light band that sweeps across the card every few seconds */
+.cm-note::before {
+  content: ""; position: absolute; top: -20%; bottom: -20%; left: 0; width: 38%; z-index: 3; pointer-events: none;
+  background: linear-gradient(100deg, transparent 0%, rgba(255, 255, 255, 0.02) 30%, rgba(214, 255, 190, 0.13) 50%, rgba(255, 255, 255, 0.02) 70%, transparent 100%);
+  transform: translateX(-140%) skewX(-14deg);
+  animation: cm-sweep 5.5s cubic-bezier(0.45, 0, 0.2, 1) infinite 1.2s;
+}
+@keyframes cm-sweep {
+  0% { transform: translateX(-140%) skewX(-14deg); }
+  32%, 100% { transform: translateX(330%) skewX(-14deg); }
+}
+.cm-by b { font-weight: 800; letter-spacing: 0.01em; }
+.cm-quote {
+  font-weight: 800; font-size: clamp(1.3rem, 2.3vw, 1.7rem); line-height: 1.15;
+  background: linear-gradient(100deg, #f4f7f2 0%, #f4f7f2 38%, #a8f06a 48%, #e9ffd9 52%, #f4f7f2 62%, #f4f7f2 100%);
+  background-size: 260% 100%; background-position: 100% 0;
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
+  animation: cm-text-shine 5.5s ease-in-out infinite 1.2s;
+}
+@keyframes cm-text-shine { 0% { background-position: 100% 0; } 32%, 100% { background-position: 0% 0; } }
+.cm-about { font-size: 0.95rem; line-height: 1.5; }
+.cm-note .link-arrow { font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .cm-note::before, .cm-quote { animation: none; } }
+
+/* ── v13: help cards line up with the Code Monkey card, with breathing room ── */
+.duo { padding: 64px 0 20px; }
+.duo .duo-grid { max-width: 820px; margin: 0 auto; gap: 22px; align-items: stretch; }
+.duo .duo-card { display: flex; flex-direction: column; }
+.duo .duo-card .btn { margin-top: auto; align-self: flex-start; }
+@media (max-width: 680px) { .duo { padding-top: 44px; } .duo .duo-grid { gap: 16px; } }

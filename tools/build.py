@@ -404,7 +404,7 @@ def build_page(p):
     codemonkey = ""
     if pg.get("codeMonkey"):
         codemonkey = (
-            '\n    <section class="pg-sec">\n      <div class="cm-note cm-wide">\n        <div class="cm-note-copy">\n'
+            '\n    <section class="pg-sec">\n      <div class="cm-note cm-wide" data-anim-zone>\n        <div class="cm-note-copy">\n'
             '          <div class="cm-by"><img src="/assets/img/code-monkey.webp" alt="Code Monkey" width="30" height="30" loading="lazy"><span><b>Featured by Code Monkey</b></span></div>\n'
             '          <blockquote class="cm-quote">“I love the cuteness of this one!”</blockquote>\n'
             '          <a class="link-arrow" href="https://youtu.be/xDeGnrX1ds4?t=215" target="_blank" rel="noopener">Watch on YouTube <span>↗</span></a>\n'
