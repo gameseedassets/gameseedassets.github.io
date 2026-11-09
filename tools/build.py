@@ -273,6 +273,7 @@ PAGE = """<!DOCTYPE html>
     <a href="/#assets">Assets</a>
     <a href="/#collection">Collection</a>
     <a href="/#reviews">Reviews</a>
+    <a href="/blog/">Blog</a>
     <a href="/#about">About</a>
     <a href="/#hire">Hire Us</a>
   </nav>
@@ -346,6 +347,7 @@ PAGE = """<!DOCTYPE html>
   </div>
   <nav class="footer-links" aria-label="Footer">
     <a href="/#collection">All assets</a>
+    <a href="/blog/">Blog</a>
     <a href="mailto:gameseedassets@gmail.com">Contact</a>
     <a href="https://discord.com/invite/sbjZXg2YJ9" target="_blank" rel="noopener">Discord</a>
   </nav>
@@ -510,6 +512,11 @@ def build_page(p):
 # ── sitemap ───────────────────────────────────────────────────────────
 def build_sitemap():
     urls = [(f"{SITE}/", "1.0")] + [(f"{SITE}/{p['slug']}/", "0.8") for p in PRODUCTS if p.get("page")]
+    posts = ROOT / "tools" / "blog" / "posts.json"
+    if posts.exists():
+        urls += [(f"{SITE}/blog/", "0.7")] + [
+            (f"{SITE}/blog/{x['slug']}/", "0.7") for x in json.loads(posts.read_text(encoding="utf-8"))["posts"]
+        ]
     body = "\n".join(
         f"  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority></url>" for u, pr in urls
     )
@@ -527,4 +534,7 @@ if __name__ == "__main__":
         if p.get("page"):
             build_page(p)
     build_index()
+    if (ROOT / "tools" / "blog" / "posts.json").exists():
+        import blog
+        blog.build_blog()
     build_sitemap()

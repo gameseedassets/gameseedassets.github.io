@@ -1,0 +1,80 @@
+{
+  "_readme": "Blog posts, newest first. Body HTML lives in tools/blog/posts/<slug>.html. Rebuild with: python tools/build.py",
+  "posts": [
+    {
+      "slug": "how-to-sell-assets-on-unity-asset-store",
+      "title": "How to sell assets on the Unity Asset Store (what we wish we'd known)",
+      "seoTitle": "How to Sell Assets on the Unity Asset Store: A Publisher's Guide",
+      "description": "A publisher's walkthrough of selling on the Unity Asset Store: the 70/30 split, the $4.99 minimum, key image sizes, packaging, review, pricing and the mistakes we made with 25+ packs.",
+      "excerpt": "The real path from a folder on your drive to a live listing: publisher profile, packaging, the four key images, review, pricing, and the things that tripped us up along the way.",
+      "tag": "Publishing",
+      "date": "2026-11-09",
+      "hero": "assets/img/products/arrow-key-1400.webp",
+      "thumb": "assets/img/products/arrow-key-700.webp",
+      "heroAlt": "Arrow Escape cover art: a Unity arrow puzzle game template by Game Seed Assets",
+      "heroCaption": "Arrow Escape, one of our Unity templates. It went from project folder to live listing using the steps in this post.",
+      "keywords": ["sell assets on Unity Asset Store", "Unity Asset Store publisher", "Asset Store submission", "Unity asset pricing"],
+      "related": ["arrow-escape", "rope-puzzle", "dark-2d-world"]
+    },
+    {
+      "slug": "how-to-market-game-assets",
+      "title": "How to market your game assets when nobody knows your name yet",
+      "seoTitle": "How to Market Game Assets: What Works for a Small Publisher",
+      "description": "Practical marketing for Unity and Unreal asset creators: store pages that convert, free assets as a funnel, YouTube tutorials, Discord support, your own site, and what we'd skip.",
+      "excerpt": "A listing on a store with 12,000+ publishers is not a marketing plan. Here's what has actually moved things for us, with our own numbers, and what we'd skip.",
+      "tag": "Marketing",
+      "date": "2026-11-09",
+      "hero": "assets/img/products/darkx-key-1400.webp",
+      "thumb": "assets/img/products/darkx-key-700.webp",
+      "heroAlt": "Dark 2D World Extended, a Limbo-style 2D environment pack for Unity",
+      "heroCaption": "Dark 2D World Extended. Its free little sibling does a lot of the marketing for it, as you'll see below.",
+      "keywords": ["market game assets", "Unity asset marketing", "promote Unity Asset Store asset", "game asset marketing"],
+      "related": ["dark-2d-world", "dark-2d-world-extended", "fog-particles"]
+    },
+    {
+      "slug": "reddit-for-unity-asset-store-creators",
+      "title": "Reddit for Unity Asset Store creators: where to post, and how not to get removed",
+      "seoTitle": "Reddit for Unity Asset Store Creators: Subreddits, Rules and Posts",
+      "description": "Which subreddits suit Unity asset creators, what their self-promotion rules actually say, and how to post clips, free packs and breakdowns without getting removed or ignored.",
+      "excerpt": "Reddit is where Unity developers hang out when they're not working. It's also very good at smelling an ad. A subreddit-by-subreddit guide for asset creators.",
+      "tag": "Community",
+      "date": "2026-11-09",
+      "hero": "assets/img/products/fog-1400.webp",
+      "thumb": "assets/img/products/fog-700.webp",
+      "heroAlt": "Free Fog Particles for Unity by Game Seed Assets",
+      "heroCaption": "Free packs like our Fog Particles are the easiest thing to share on Reddit, because the post gives something away instead of asking for something.",
+      "keywords": ["Reddit for Unity developers", "r/Unity3D self promotion", "promote Unity asset on Reddit", "gamedev subreddits"],
+      "related": ["fog-particles", "rain-particles", "low-poly-fire-particles"]
+    },
+    {
+      "slug": "unity-asset-store-vs-fab-vs-itch-io",
+      "title": "Unity Asset Store vs Fab vs itch.io: where should you sell your game assets?",
+      "seoTitle": "Unity Asset Store vs Fab vs itch.io for Selling Game Assets",
+      "description": "Revenue split, audience, pricing rules, licences, payouts and upload effort compared for the Unity Asset Store (70/30), Fab (88/12) and itch.io (open revenue share), from a publisher on all three.",
+      "excerpt": "70/30, 88/12, or whatever you choose on itch.io. The split is only one part of it. A side-by-side from a studio that sells on all three.",
+      "tag": "Marketplaces",
+      "date": "2026-11-09",
+      "hero": "assets/img/products/plane-key-1400.webp",
+      "thumb": "assets/img/products/plane-key-700.webp",
+      "heroAlt": "Paper Plane Controller, sold on Fab with Unreal Engine and Unity versions",
+      "heroCaption": "Paper Plane Controller ships Unreal and Unity versions in one Fab listing, which is one of the things Fab does that the others don't.",
+      "keywords": ["Unity Asset Store vs Fab", "Fab vs itch.io", "where to sell game assets", "Fab revenue share"],
+      "related": ["paper-plane-controller", "arrow-escape", "25d-engine"]
+    },
+    {
+      "slug": "asset-store-key-images-screenshots-trailers",
+      "title": "Key images, screenshots and trailers that sell Unity assets",
+      "seoTitle": "Unity Asset Store Key Images, Screenshots and Trailers That Sell",
+      "description": "The four Unity Asset Store key image sizes and their rules, how to design a card that reads at 420 pixels, captioned screenshots, and a 45-60 second trailer plan, using our own store media.",
+      "excerpt": "Buyers decide from a 420-pixel card and the first few seconds of a video. Our actual covers, cards, captioned screenshots and trailer plans, and the rules Unity enforces.",
+      "tag": "Store media",
+      "date": "2026-11-09",
+      "hero": "assets/img/products/grass-key-1400.webp",
+      "thumb": "assets/img/products/grass-key-700.webp",
+      "heroAlt": "Grass Cutting Simulator cover image, 1950 by 1300 pixels, by Game Seed Assets",
+      "heroCaption": "The Grass Cutting Simulator cover. We'll take it apart below, along with its card, icon and screenshots.",
+      "keywords": ["Unity Asset Store key images", "asset store screenshots", "asset trailer", "Unity Asset Store cover image size"],
+      "related": ["grass-cutting-simulator", "paper-plane-controller", "arrow-escape"]
+    }
+  ]
+}

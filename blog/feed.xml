@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Game Seed Assets blog</title>
+  <link>https://gameseedassets.store/blog/</link>
+  <description>Notes on making, publishing and marketing game assets.</description>
+  <item>
+    <title>How to sell assets on the Unity Asset Store (what we wish we&#x27;d known)</title>
+    <link>https://gameseedassets.store/blog/how-to-sell-assets-on-unity-asset-store/</link>
+    <guid>https://gameseedassets.store/blog/how-to-sell-assets-on-unity-asset-store/</guid>
+    <pubDate>Mon, 09 Nov 2026 09:00:00 +0000</pubDate>
+    <description>A publisher&#x27;s walkthrough of selling on the Unity Asset Store: the 70/30 split, the $4.99 minimum, key image sizes, packaging, review, pricing and the mistakes we made with 25+ packs.</description>
+  </item>
+  <item>
+    <title>How to market your game assets when nobody knows your name yet</title>
+    <link>https://gameseedassets.store/blog/how-to-market-game-assets/</link>
+    <guid>https://gameseedassets.store/blog/how-to-market-game-assets/</guid>
+    <pubDate>Mon, 09 Nov 2026 09:00:00 +0000</pubDate>
+    <description>Practical marketing for Unity and Unreal asset creators: store pages that convert, free assets as a funnel, YouTube tutorials, Discord support, your own site, and what we&#x27;d skip.</description>
+  </item>
+  <item>
+    <title>Reddit for Unity Asset Store creators: where to post, and how not to get removed</title>
+    <link>https://gameseedassets.store/blog/reddit-for-unity-asset-store-creators/</link>
+    <guid>https://gameseedassets.store/blog/reddit-for-unity-asset-store-creators/</guid>
+    <pubDate>Mon, 09 Nov 2026 09:00:00 +0000</pubDate>
+    <description>Which subreddits suit Unity asset creators, what their self-promotion rules actually say, and how to post clips, free packs and breakdowns without getting removed or ignored.</description>
+  </item>
+  <item>
+    <title>Unity Asset Store vs Fab vs itch.io: where should you sell your game assets?</title>
+    <link>https://gameseedassets.store/blog/unity-asset-store-vs-fab-vs-itch-io/</link>
+    <guid>https://gameseedassets.store/blog/unity-asset-store-vs-fab-vs-itch-io/</guid>
+    <pubDate>Mon, 09 Nov 2026 09:00:00 +0000</pubDate>
+    <description>Revenue split, audience, pricing rules, licences, payouts and upload effort compared for the Unity Asset Store (70/30), Fab (88/12) and itch.io (open revenue share), from a publisher on all three.</description>
+  </item>
+  <item>
+    <title>Key images, screenshots and trailers that sell Unity assets</title>
+    <link>https://gameseedassets.store/blog/asset-store-key-images-screenshots-trailers/</link>
+    <guid>https://gameseedassets.store/blog/asset-store-key-images-screenshots-trailers/</guid>
+    <pubDate>Mon, 09 Nov 2026 09:00:00 +0000</pubDate>
+    <description>The four Unity Asset Store key image sizes and their rules, how to design a card that reads at 420 pixels, captioned screenshots, and a 45-60 second trailer plan, using our own store media.</description>
+  </item>
+</channel>
+</rss>
