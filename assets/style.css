@@ -4,12 +4,12 @@
    no canvas, no custom cursor.
    ============================================================ */
 
+
 @font-face {
   font-family: 'IntegralCF';
   src: url('fonts/IntegralCF-Bold.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
-  /* letters, digits, comma, period only — the rest of this font's glyphs are placeholders */
   /* letters + space only: this font's digits and punctuation are placeholder glyphs */
   unicode-range: U+0020, U+0041-005A, U+0061-007A;
 }
@@ -31,7 +31,7 @@
   --muted: rgba(242, 246, 242, 0.62);
   --dim: rgba(242, 246, 242, 0.38);
 
-  --display: 'IntegralCF', 'Arial Black', Impact, sans-serif;
+  --display: 'Baloo 2', 'DM Sans', system-ui, sans-serif;
   --sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   --mono: 'DM Mono', ui-monospace, 'Courier New', monospace;
 
@@ -703,3 +703,19 @@ h2, h3 { font-family: var(--cute); font-weight: 800; line-height: 1.08; letter-s
 h2 { font-size: clamp(2rem, 3.9vw, 3.2rem); }
 .rtrack { gap: 36px; }
 @media (max-width: 680px) { .rtrack { gap: 22px; } }
+
+/* ── v9: Baloo 2 for every heading (hero title, brand, tagline, quotes too) ── */
+h1, h2, h3, .hero-title, .tagline, .cm-quote { font-family: var(--display); font-weight: 800; letter-spacing: -0.005em; }
+.hero-title { line-height: 0.98; }
+.hero-title .l3 { letter-spacing: 0.22em; }
+.brand { font-weight: 800; letter-spacing: 0.06em; }
+
+/* ── v10: the hero title keeps its original blocky face; buttons go Baloo 2 ── */
+.hero-title { font-family: 'IntegralCF', 'Arial Black', Impact, sans-serif; font-weight: 700; line-height: 0.93; letter-spacing: -0.01em; }
+.hero-title .l3 { letter-spacing: 0.32em; }
+.btn, .demo-btn, .cf, .store-chip, .cap-more, .market-row a, .final-stores a, .nav-cta {
+  font-family: var(--display); font-weight: 700; letter-spacing: 0.005em;
+}
+
+/* ── v11: carousel clips sideways only, so button glows show in full ── */
+.carousel { overflow: hidden; overflow: clip visible; padding-bottom: 0; }

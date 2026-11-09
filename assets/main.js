@@ -333,7 +333,7 @@ function readReviews() {
     function fit() {
       var h = 0;
       slides.forEach(function (s) { h = Math.max(h, s.offsetHeight); });
-      if (h) box.style.height = Math.ceil(h + 12) + 'px';
+      if (h) box.style.height = Math.ceil(h + 30) + 'px';
     }
     fit();
     var ft;
