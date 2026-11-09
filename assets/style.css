@@ -696,3 +696,10 @@ html:not(.js) .cfilter { display: none; }
 }
 #assets { padding-top: 40px; }
 @media (max-width: 680px) { .rtrack { gap: 14px; } #assets { padding-top: 24px; } }
+
+/* ── v8: friendlier headings (Baloo 2) and more air between strip reviews ── */
+:root { --cute: 'Baloo 2', 'DM Sans', system-ui, sans-serif; }
+h2, h3 { font-family: var(--cute); font-weight: 800; line-height: 1.08; letter-spacing: -0.005em; }
+h2 { font-size: clamp(2rem, 3.9vw, 3.2rem); }
+.rtrack { gap: 36px; }
+@media (max-width: 680px) { .rtrack { gap: 22px; } }
