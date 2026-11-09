@@ -118,7 +118,7 @@
     {
       "slug": "paper-plane-controller",
       "name": "Paper Plane Controller",
-      "cat": "tools",
+      "cat": "templates",
       "price": "$24.99",
       "blurb": "Arcade paper plane flight controller with 10 plane designs, boost, crashes and a demo map. Unreal + Unity.",
       "imageUrl": "https://media.fab.com/image_previews/gallery_images/3ec7e3d4-e187-4146-ad69-84d5028dd2dd/bf355260-3941-4ba4-a212-773e8150e0c6.jpg",
@@ -389,11 +389,11 @@
       "cat": "templates",
       "price": "$25",
       "blurb": "3D environments with 2D sprite characters, for Unity and Unreal.",
-      "imageUrl": "https://img.itch.zone/aW1nLzI3MTQ5NDI5LnBuZw==/original/uFzcei.png",
       "stores": {
         "fab": "https://www.fab.com/listings/9925900a-384c-4253-90c6-5352907da82d",
         "itch": "https://gameseedassets.itch.io/25d-game-template"
-      }
+      },
+      "image": "assets/img/catalog/25d-game-template.webp"
     },
     {
       "slug": "dark-2d-world",
@@ -620,7 +620,8 @@
       "blurb": "Potions and magic effects to add some sparkle to your game.",
       "stores": {
         "itch": "https://gameseedassets.itch.io/magical-potions-effects-pack"
-      }
+      },
+      "image": "assets/img/catalog/magical-potions-effects-pack.webp"
     },
     {
       "slug": "isometric-buildings",
